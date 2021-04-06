@@ -4,6 +4,12 @@ html, body {
     margin: 0;
 }
 
+h1, h3, p {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
 #logo {
     width: 10%;
     height: auto;
@@ -14,16 +20,19 @@ html, body {
 }
   
 .top {
+    height: 200px;
     text-align: center;
     background-color: lightgreen;
 }
 
 .content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
   
 .bottom {
+    height: 450px;
+    text-align: center;
 }
   
 .down {
