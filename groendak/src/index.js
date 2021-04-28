@@ -6,8 +6,8 @@ import './index.css';
 
 //components
 import Homepage from './homepage/Homepage';
-import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import reportWebVitals from './reportWebVitals';
 
