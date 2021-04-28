@@ -1,14 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './index.css';
 
+//components
 import Homepage from './homepage/Homepage';
+import Header from './layouts/Header';
+import Footer from './layouts/Footer';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Homepage />
+    <Router>
+      <div className="app">
+        <title>Natuurdekkers</title>
+        < Header />
+
+        <Homepage />
+
+        < Footer />
+      </div>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
