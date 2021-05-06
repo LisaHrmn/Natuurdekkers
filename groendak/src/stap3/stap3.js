@@ -2,7 +2,9 @@ import './stap3.css';
 
 function Stap3() {
   return (
-    <div></div>
+    <div>
+      <h1>This is Step three</h1>
+    </div>
   );
 }
 

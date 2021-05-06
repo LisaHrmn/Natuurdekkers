@@ -8,6 +8,9 @@ import './index.css';
 import Homepage from './homepage/Homepage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Stap1 from'./stap1/stap1';
+import Stap2 from'./stap2/stap2';
+import Stap3 from'./stap3/stap3';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -18,7 +21,22 @@ ReactDOM.render(
         <title>Natuurdekkers</title>
         < Header />
 
-        <Homepage />
+        {/* Routes */}
+        <Route exact path='/' render ={ props => (
+          <Homepage />
+        )}/>
+
+        <Route path='/1' render={ props => (
+          <Stap1 />
+        )}/>
+
+        <Route path='/2' render={ props => (
+          <Stap2 />
+        )}/>
+
+        <Route path='/3' render={ props => (
+          <Stap3 />
+        )}/>
 
         < Footer />
       </div>
