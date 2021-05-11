@@ -1,0 +1,65 @@
+.infotext{
+    background-color: lightgrey;
+    text-align: right;
+    word-wrap: break-word;
+    width: 400px; 
+    padding: 20px;
+    border-radius: 25px 0px 0px 25px;
+    position: absolute;
+  right: 0px;
+  width: 300px;
+  
+  padding: 10px;
+}
+
+button.verder{
+    background-color: rgb(43, 153, 43);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.imagerow{
+    position: absolute;
+  right: 0px;
+  width: 300px;
+  margin-top: 200px;
+  padding: 10px;
+}
+
+.techinfo{
+    color: green;
+}
+
+.topselector{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    margin-top: 200px;
+    padding: 10px;
+}
