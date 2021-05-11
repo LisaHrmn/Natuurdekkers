@@ -5,7 +5,7 @@ function Header() {
     return (
       <div>
           <header>
-            <p>This is a header</p>
+            <h1>Natuurdekkers</h1>
             <Link to='/' className="link">Home</Link> | 
             <Link to='/1' className="link">Step 1</Link> | 
             <Link to='/2' className="link">Step 2</Link> | 
