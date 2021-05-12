@@ -17,7 +17,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className="app">
+      <div>
         <title>Natuurdekkers</title>
         < Header />
 
