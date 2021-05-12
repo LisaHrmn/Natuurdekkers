@@ -2,7 +2,9 @@ import './stap2.css';
 
 function Stap2() {
   return (
-    <div></div>
+    <div>
+      <h1>This is Step two</h1>
+    </div>
   );
 }
 
