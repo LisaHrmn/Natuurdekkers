@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header() {
     return (
-      <div className='p-2 bg-green-800'>
+      <div className='p-2 bg-green-800 text-center'>
           <header>
             <h1 className='font-semibold text-gray-100'>Natuurdekkers</h1>
             <Link to='/' className="link">Home</Link> | 
