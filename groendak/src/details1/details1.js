@@ -93,6 +93,7 @@ function Details1() {
       
       </div>
       </div>
+
     </div>
   );
 }
