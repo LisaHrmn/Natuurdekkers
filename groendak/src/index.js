@@ -18,7 +18,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className="app">
+      <div className='relative min-h-full'>
         <title>Natuurdekkers</title>
         < Header />
 
