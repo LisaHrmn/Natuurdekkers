@@ -10,7 +10,7 @@ function Details1() {
       <div class="barrier"></div>
     
       {/* <img class="rtl" src={placeholder} alt="placeholder" width="100" height="50"></img> */}
-      <a class="terug" href="/">terug</a>
+      <a class="text-left underline pl-2" href="/">terug</a>
 
       <div class="row">
         <div class="column3">
@@ -37,23 +37,23 @@ function Details1() {
            <button class="sb">verder</button> 
       </div>
 
-      <h1>Economish groen dak</h1>
+      <h1 class="text-left pl-9">Economish groen dak</h1>
 
 
-      <h2 class= "td">technische informatie</h2>
-      <ul>
-        <ul class="ulbl">gewicht</ul>
-        <ul class="ulbl">systeemdikte</ul>
-        <ul class="ulbl">Dakhelling</ul>
-        <ul class="ulbl">Vegetatie</ul>
-        <ul class="ulbl">Waterretentie</ul>
-        <ul class="ulbl">Afvoercoëfficient</ul>
-        <ul class="ulbl">Waterbuffering</ul>
+      <h2 class="text-left text-green-600 pl-16">technische informatie</h2>
+      <ul class="text-left pl-9 pt-3 divide-y max-w-min">
+        <ul class="text-left">gewicht</ul>
+        <ul class="text-left">systeemdikte</ul>
+        <ul class="text-left">Dakhelling</ul>
+        <ul class="text-left">Vegetatie</ul>
+        <ul class="text-left">Waterretentie</ul>
+        <ul class="text-left">Afvoercoëfficient</ul>
+        <ul class="text-left">Waterbuffering</ul>
       </ul>
       
       
      
-     <div class="row2">
+  
 
     <div class="column4">
     <i class= "arrow right"></i>
@@ -89,11 +89,11 @@ function Details1() {
 
 {/* </ul> */}
 </div>
-      <div class= "gallery2"><img src={placeholder} alt="placeholder" width="400" height="200"></img></div>
+      <div class= "p-10"><img src={placeholder} alt="placeholder" width="600" height="300"></img></div>
       
       </div>
       </div>
-    </div>
+    
   );
 }
 
