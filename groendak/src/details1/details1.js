@@ -1,3 +1,6 @@
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
+
 import './details1.css';
 import placeholder from "./images/placeholder.png";
 import subplaceholder1 from "./images/sub-placeholder1.png";
@@ -55,13 +58,13 @@ function Details1() {
      
   
 
-    <div class="column4">
+    {/* <div class="column4">
     <i class= "arrow right"></i>
-    </div>
-
-     <div class="column5">
+    </div> */}
+      <AliceCarousel>
+     {/* <div class="column5"> */}
       {/* <ul class= "ulr"> */}
-  <ul><div class="gallery">
+  {/* <ul><div class="gallery">
   <a target="_blank" href="img_5terre.jpg">
     <img src={placeholder} alt="placeholder" width="300" height="200"></img>
   </a>
@@ -80,15 +83,26 @@ function Details1() {
     <img src={placeholder} alt="placeholder" width="300" height="200"></img>
   </a>
 </div>
-</ul>
+</ul> */}
 
-<div class="column6">
-    <i class= "arrow left"></i>
-    </div>
+<div className="m-auto absolute inset-y-0 right-0 h-auto">
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+</div>
+<div className="m-auto absolute inset-y-0 right-0 h-auto">
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+<img src={placeholder} alt="placeholder" width="300" height="200"></img>
+</div>
 
 
 {/* </ul> */}
-</div>
+{/* </div> */}
+</AliceCarousel>
+{/* <div class="column6">
+    <i class= "arrow left"></i>
+    </div> */}
       <div class= "p-10"><img src={placeholder} alt="placeholder" width="600" height="300"></img></div>
       
       </div>
