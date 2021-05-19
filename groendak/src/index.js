@@ -11,14 +11,15 @@ import Footer from './components/Footer/Footer';
 import Stap1 from'./stap1/stap1';
 import Stap2 from'./stap2/stap2';
 import Stap3 from'./stap3/stap3';
-import Details1 from './Details1/Details1'
+import Details1 from'./details1/details1';
+
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className="app">
+      <div className='relative min-h-full'>
         <title>Natuurdekkers</title>
         < Header />
 
@@ -38,7 +39,6 @@ ReactDOM.render(
         <Route path='/3' render={ props => (
           <Stap3 />
         )}/>
-
         <Route path='/D1' render={props =>(
           <Details1 />
         )}/>
