@@ -1,5 +1,6 @@
 import '../stap1.css';
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
 class Plat extends Component {
   constructor() {
@@ -26,7 +27,7 @@ class Plat extends Component {
       knn.learn([gewichtNatuur, 3, 5, 2], "natuur");
     }
 
-    this.state = {knn: knn};
+    this.state = {knn: knn, data: "", done: false};
   }
 
   handleSubmit(event) {
@@ -45,30 +46,49 @@ class Plat extends Component {
     let prediction = this.state.knn.classify([gewicht, water, bio, onderhoud])
     console.log(prediction)
 
-    
+    this.setState({
+      data: prediction,
+      done: true
+    }, () => {
+      return this.state;
+    });
   }
 
   render() {
-    return (
-      <div>
-        <h2>Plat:</h2>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="gewicht">Gewicht in KG</label>
-          <input id="gewicht" type="number"/>
-          <br/>
-          <label htmlFor="water">1-3</label>
-          <input id="water" type="number"/>
-          <br/>
-          <label htmlFor="bio">biodiversiteit 1-5</label>
-          <input id="bio" type="number" min="1" max="5"/>
-          <br/>
-          <label htmlFor="onderhoud">onderhoud 1-5</label>
-          <input id="onderhoud" type="number" min="1" max="5"/>
-          <br/>
-          <button id="submit">Submit</button>
-        </form>
-      </div>
-    );
+    if (this.state.done == true) {
+      return (
+        <div>
+          <Redirect
+            to={{
+              pathname: "/2",
+              state: { data: this.state.data },
+            }}
+          />
+        </div>
+      );
+    }
+    else {
+      return (
+        <div>
+          <h2>Plat:</h2>
+          <form onSubmit={this.handleSubmit}>
+            <label htmlFor="gewicht">Gewicht in KG</label>
+            <input id="gewicht" type="number"/>
+            <br/>
+            <label htmlFor="water">1-3</label>
+            <input id="water" type="number"/>
+            <br/>
+            <label htmlFor="bio">biodiversiteit 1-5</label>
+            <input id="bio" type="number" min="1" max="5"/>
+            <br/>
+            <label htmlFor="onderhoud">onderhoud 1-5</label>
+            <input id="onderhoud" type="number" min="1" max="5"/>
+            <br/>
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+      );
+    }
   }
 }
 

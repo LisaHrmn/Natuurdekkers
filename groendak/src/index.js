@@ -32,11 +32,11 @@ ReactDOM.render(
         )}/>
 
         <Route path='/1/:helling' render={ props => (
-          <Stap1 {...props}/>
+          <Stap1 {...props} />
         )}/>
 
         <Route path='/2' render={ props => (
-          <Stap2 />
+          <Stap2 {...props} />
         )}/>
 
         <Route path='/3' render={ props => (
