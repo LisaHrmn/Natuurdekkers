@@ -8,8 +8,6 @@ import licht from '../img/licht.jpg';
 import natuur from '../img/natuur.jpg';
 import solar from '../img/solar.jpg';
 
-import './Homepage.css';
-
 function Homepage() {
   return (
     <div>

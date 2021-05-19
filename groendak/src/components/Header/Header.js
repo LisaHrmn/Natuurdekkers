@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './Header.css';
 
 function Header() {
     return (
