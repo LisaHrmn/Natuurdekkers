@@ -12,6 +12,7 @@ import Stap0 from './stap0/stap0';
 import Stap1 from'./stap1/stap1';
 import Stap2 from'./stap2/stap2';
 import Stap3 from'./stap3/stap3';
+import Details1 from'./details1/details1';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -41,6 +42,10 @@ ReactDOM.render(
 
         <Route path='/3' render={ props => (
           <Stap3 />
+        )}/>
+
+        <Route path='/d1' render={ props => (
+          <Details1 />
         )}/>
 
         < Footer />
