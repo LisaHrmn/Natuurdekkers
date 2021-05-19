@@ -1,6 +1,8 @@
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
+import { BrowserRouter as Link } from 'react-router-dom';
+
 //images for carousel
 import eco from '../img/eco.png';
 import hellend from '../img/hellend.jpg';
@@ -57,15 +59,20 @@ function Homepage() {
 
       <section className='p-3 text-center'>
         <h3 className='text-green-600 font-semibold'>Stappenplan</h3>
-        <p className='p-2 max-w-prose m-auto'>
+        <p className='p-2 pb-3 max-w-prose m-auto'>
           Binnen drie stappen kunt u gratis uitvinden wat voor groendak het best bij uw wensen en situatie zou passen en hoe u hiermee aan de slag zou kunnen. 
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
+        <button className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+          <Link to='/1'>
+              Start
+          </Link>
+        </button>
       </section>
 
       <div className='sm:mx-48 mx-0'>
         <section className='p-3 text-left flex'>
-          <h3 className='p-5 text-green-600 font-bold break-normal'>Stap 1</h3>
+          <h3 className='p-5 text-green-600 font-bold break-normal whitespace-nowrap'>Stap 1</h3>
           <h1 className='p-4 text-gray-600 font-light'>|</h1>
           <div>
             <h4 className='text-gray-600 font-semibold'>Formulier</h4>
@@ -76,24 +83,24 @@ function Homepage() {
         </section>
 
         <section className='p-3 text-right flex flex-row-reverse'>
-          <h3 className='p-5 text-green-600 font-bold'>Stap 2</h3>
+          <h3 className='p-5 text-green-600 font-bold whitespace-nowrap'>Stap 2</h3>
           <h1 className='p-4 text-gray-600 font-light'>|</h1>
           <div>
             <h4 className='text-gray-600 font-semibold'>Opties</h4>
             <p className='max-w-prose m-auto mr-0'>
               Op basis van uw gegevens en voorkeuren worden er een aantal daken weergegeven en waarom deze bij u zouden passen. 
-              U kunt hierin een keuze maken en naar de volgende stap.
+              U kunt hierin een keuze maken en naar de volgende stap gaan.
             </p>
           </div>
         </section>
 
         <section className='p-3 text-left flex'>
-          <h3 className='p-5 text-green-600 font-bold'>Stap 3</h3>
+          <h3 className='p-5 text-green-600 font-bold whitespace-nowrap'>Stap 3</h3>
           <h1 className='p-4 text-gray-600 font-light'>|</h1>
           <div>
             <h4 className='text-gray-600 font-semibold'>Vervolgstappen</h4>
             <p className='max-w-prose'>
-              Hier vind u alle informatie over het gekozen dak en hoe u hiermee aan de slag zou kunnen.
+              Hier vindt u alle informatie over het gekozen dak en hoe u hiermee aan de slag zou kunnen.
             </p>
           </div>
         </section>
