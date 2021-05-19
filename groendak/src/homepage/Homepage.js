@@ -1,7 +1,7 @@
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import { BrowserRouter as Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 //images for carousel
 import eco from '../img/eco.png';
@@ -59,15 +59,13 @@ function Homepage() {
 
       <section className='p-3 text-center'>
         <h3 className='text-green-600 font-semibold'>Stappenplan</h3>
-        <p className='p-2 pb-3 max-w-prose m-auto'>
+        <p className='p-2 pb-5 max-w-prose m-auto'>
           Binnen drie stappen kunt u gratis uitvinden wat voor groendak het best bij uw wensen en situatie zou passen en hoe u hiermee aan de slag zou kunnen. 
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
-        <button className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
-          <Link to='/1'>
-              Start
-          </Link>
-        </button>
+        <Link to='/1' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+          Start
+        </Link>
       </section>
 
       <div className='sm:mx-48 mx-0'>
