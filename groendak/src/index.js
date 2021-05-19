@@ -8,6 +8,7 @@ import './index.css';
 import Homepage from './homepage/Homepage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Stap0 from './stap0/stap0';
 import Stap1 from'./stap1/stap1';
 import Stap2 from'./stap2/stap2';
 import Stap3 from'./stap3/stap3';
@@ -27,12 +28,16 @@ ReactDOM.render(
           <Homepage />
         )}/>
 
-        <Route path='/1' render={ props => (
-          <Stap1 />
+        <Route path='/0' render={ props => (
+          <Stap0 />
+        )}/>
+
+        <Route path='/1/:helling' render={ props => (
+          <Stap1 {...props} />
         )}/>
 
         <Route path='/2' render={ props => (
-          <Stap2 />
+          <Stap2 {...props} />
         )}/>
 
         <Route path='/3' render={ props => (
