@@ -30,20 +30,29 @@ class Helling extends Component {
   }
 
   handleSubmit(event) {
+    console.log(event)
     event.preventDefault();
-    let gewicht = document.getElementById("gewicht").value;
-    let water = document.getElementById("water").value;
-    let bio = document.getElementById("bio").value;
-    let onderhoud = document.getElementById("onderhoud").value;
+    let graden = document.getElementById("graden").value;
 
-    gewicht = parseInt(gewicht);
-    gewicht = gewicht / 10;
-    water = parseInt(water);
-    bio = parseInt(bio);
-    onderhoud = parseInt(onderhoud);
-
-    let prediction = this.state.knn.classify([gewicht, water, bio, onderhoud])
-    console.log(prediction)
+    if(graden >= 1 && graden <= 15)
+    {
+      console.log("Dakbegroeiing zonder schuifbeveiligingsysteem");
+    }
+    else if(graden >= 16 && graden <= 35)
+    {
+      console.log("Dakbegroeiing met schuifbeveiligingsysteem afsteuning in de goot/dakrand");
+    }
+    else if(graden >= 36 && graden <= 40)
+    {
+      console.log("Dakbegroeiing met schuifbeveiligingsysteem afsteuning tegen dakrand")
+    }
+    else if(graden >= 41 && graden <= 45)
+    {
+      console.log("Dakbegroeiing met schuifbeveiligingsysteem bevestigd aan onderconstructie")
+    }
+    else {
+      console.log("Ga een stap terug en kies voor geen helling");
+    }
   }
 
   render() {
@@ -51,17 +60,8 @@ class Helling extends Component {
       <div>
         <h2>Helling:</h2>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="gewicht">Gewicht in KG</label>
-          <input id="gewicht" type="number"/>
-          <br/>
-          <label htmlFor="water">1-3</label>
-          <input id="water" type="number"/>
-          <br/>
-          <label htmlFor="bio">biodiversiteit 1-5</label>
-          <input id="bio" type="number" min="1" max="5"/>
-          <br/>
-          <label htmlFor="onderhoud">onderhoud 1-5</label>
-          <input id="onderhoud" type="number" min="1" max="5"/>
+          <label htmlFor="graden">Dak helling in graden°:</label>
+          <input id="graden" type="number" min="1" max="45"/>
           <br/>
           <button id="submit">Submit</button>
         </form>
