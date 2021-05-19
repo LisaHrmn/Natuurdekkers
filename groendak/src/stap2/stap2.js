@@ -4,14 +4,14 @@ import React, { Component } from 'react';
 class Stap2 extends Component {
   constructor() {
     super()
+
+    this.state = {recommendation: "", done: false};
   }
 
   render() {
-    console.log(this.props.location.state);
-
     return (
       <div>
-        <h2>Plat:</h2>
+        <h2>Aanbeveling: {this.props.location.state.recommendation}</h2>
       </div>
     );
   }

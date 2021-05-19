@@ -27,7 +27,7 @@ class Plat extends Component {
       knn.learn([gewichtNatuur, 3, 5, 2], "natuur");
     }
 
-    this.state = {knn: knn, data: "", done: false};
+    this.state = {knn: knn, recommendation: "", done: false};
   }
 
   handleSubmit(event) {
@@ -47,7 +47,7 @@ class Plat extends Component {
     console.log(prediction)
 
     this.setState({
-      data: prediction,
+      recommendation: prediction,
       done: true
     }, () => {
       return this.state;
@@ -61,7 +61,7 @@ class Plat extends Component {
           <Redirect
             to={{
               pathname: "/2",
-              state: { data: this.state.data },
+              state: { recommendation: this.state.recommendation },
             }}
           />
         </div>
