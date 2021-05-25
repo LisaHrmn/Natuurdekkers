@@ -99,25 +99,26 @@ class Plat extends Component {
     }
     else {
       return (
-        <div>
-          <h2>Plat:</h2>
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor="gewicht">Gewicht in KG</label>
-            <input id="gewicht" type="number"/>
-            <br/>
-            <label htmlFor="oppervlak">Oppervlakte dak in m²</label>
-            <input id="oppervlak" type="number"/>
-            <br/>
-            <label htmlFor="water">1-3</label>
-            <input id="water" type="number"/>
-            <br/>
-            <label htmlFor="bio">biodiversiteit 1-5</label>
-            <input id="bio" type="number" min="1" max="5"/>
-            <br/>
-            <label htmlFor="onderhoud">onderhoud 1-5</label>
-            <input id="onderhoud" type="number" min="1" max="5"/>
-            <br/>
-            <button id="submit">Submit</button>
+        <div className='text-center pb-48'>
+          <h2 className='pt-3'>Gegevens plat dak:</h2>
+          <h4 className='pt-3'>Vul hier de gegevens in voor uw platte dak</h4>
+          <form onSubmit={this.handleSubmit} className='flex flex-col'>
+            <label htmlFor="gewicht" className='pt-5'>Gewicht in KG</label>
+            <input id="gewicht" type='number' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+
+            <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+            <input id="oppervlak" type='number' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+
+            <label htmlFor="water" className='pt-5'>Waterretentie (1-3)</label>
+            <input id="water" type='number' min='1' max='3' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+
+            <label htmlFor="bio" className='pt-5'>Biodiversiteit (1-5)</label>
+            <input id="bio" type='number' min="1" max="5" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+
+            <label htmlFor="onderhoud" className='pt-5'>Onderhoud (1-5)</label>
+            <input id="onderhoud" type='number' min="1" max="5" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+
+            <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
           </form>
         </div>
       );
