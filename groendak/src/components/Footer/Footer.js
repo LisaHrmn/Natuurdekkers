@@ -4,7 +4,7 @@ function Footer() {
         <footer>
           <h3 className='text-green-600 font-semibold'>Contact</h3>
           <p>Groendak@gmail.com</p>
-          <p>06 182462811</p>
+          <p>06 12345678</p>
 
           <p className='flex font-semibold'>&copy;CMGT Team 8 2021</p>
         </footer>
