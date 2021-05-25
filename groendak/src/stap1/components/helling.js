@@ -73,7 +73,7 @@ class Helling extends Component {
     else {
       return (
         <div>
-          <h2>Helling:</h2>
+          <h2>Hellend dak:</h2>
           <form onSubmit={this.handleSubmit}>
             <label htmlFor="graden">Dak helling in graden°:</label>
             <input id="graden" type="number" min="1" max="45"/>

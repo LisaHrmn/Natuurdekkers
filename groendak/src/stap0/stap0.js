@@ -1,4 +1,3 @@
-import './stap0.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 //images import
@@ -12,12 +11,12 @@ function Stap0() {
       <h4 className='py-3'>Heeft u een plat dak, of een hellend dak?</h4>
       <div className='py-2 bg-gray-100'>
         <div className='pt-20 flex overflow-hidden'>
-          <img src={plat} className='m-auto sm:w-1/3 h-auto transform hover:scale-125' alt='Plat dak'/>
-          <img src={hellend} className='m-auto sm:w-1/3 h-auto transform hover:scale-125' alt='Hellend dak'/>
+          <img src={plat} className='m-auto sm:w-1/3 h-auto transform hover:scale-125 z-50' alt='Plat dak'/>
+          <img src={hellend} className='m-auto sm:w-1/3 h-auto transform hover:scale-125 z-50' alt='Hellend dak'/>
         </div>
         <div className='py-3 flex justify-around'>
-          <Link to={`/1/vlak`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
-          <Link to={`/1/helling`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Hellend dak</Link>
+          <Link to={`/1/vlak`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Plat dak</Link>
+          <Link to={`/1/helling`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Hellend dak</Link>
         </div>
       </div>
     </div>
