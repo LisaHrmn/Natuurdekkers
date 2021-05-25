@@ -72,16 +72,17 @@ class Helling extends Component {
     }
     else {
       return (
-        <div>
-          <h2>Hellend dak:</h2>
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor="graden">Dak helling in graden°:</label>
-            <input id="graden" type="number" min="1" max="45"/>
+        <div className='text-center pb-48'>
+          <h2 className='pt-3'>Gegevens Hellend dak:</h2>
+          <h4 className='pt-3'>Vul hier de gegevens in voor uw hellend dak</h4>
+          <form onSubmit={this.handleSubmit} className='flex flex-col'>
+            <label htmlFor="graden" className='pt-5'>Dak helling in graden°:</label>
+            <input id="graden" type="number" min="1" max="45" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
             <br/>
-            <label htmlFor="oppervlak">Oppervlakte dak in m²</label>
-            <input id="oppervlak" type="number"/>
+            <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+            <input id="oppervlak" type="number" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
             <br/>
-            <button id="submit">Submit</button>
+            <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
           </form>
         </div>
       );
