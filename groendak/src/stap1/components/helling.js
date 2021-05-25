@@ -9,13 +9,19 @@ class Helling extends Component {
     super()
     this.handleSubmit = this.handleSubmit.bind(this);
 
-    this.state = {recommendation: "", done: false};
+    this.state = {recommendation: "", prijsMin: "", prijsMax: "", done: false};
   }
 
   handleSubmit(event) {
     console.log(event)
     event.preventDefault();
     let graden = document.getElementById("graden").value;
+    let oppervlak = document.getElementById("oppervlak").value;
+
+    let prijsMin = oppervlak * 40;
+    let prijsMax = oppervlak * 70;
+
+
 
     if(graden >= 1 && graden <= 15)
     {
@@ -43,6 +49,8 @@ class Helling extends Component {
 
     this.setState({
       recommendation: this.prediction,
+      prijsMin: prijsMin,
+      prijsMax: prijsMax,
       done: true
     }, () => {
       return this.state;
@@ -56,7 +64,7 @@ class Helling extends Component {
           <Redirect
             to={{
               pathname: "/2",
-              state: { recommendation: this.state.recommendation },
+              state: { recommendation: this.state.recommendation, prijsMin: this.state.prijsMin, prijsMax: this.state.prijsMax },
             }}
           />
         </div>
@@ -69,6 +77,9 @@ class Helling extends Component {
           <form onSubmit={this.handleSubmit}>
             <label htmlFor="graden">Dak helling in graden°:</label>
             <input id="graden" type="number" min="1" max="45"/>
+            <br/>
+            <label htmlFor="oppervlak">Oppervlakte dak in m²</label>
+            <input id="oppervlak" type="number"/>
             <br/>
             <button id="submit">Submit</button>
           </form>
