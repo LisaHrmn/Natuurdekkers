@@ -98,7 +98,7 @@ class Plat extends Component {
     }
     else {
       return (
-        <div className='text-center pb-48'>
+        <div className='text-center'>
           <h2 className='pt-3'>Gegevens plat dak:</h2>
           <h4 className='pt-3'>Vul hier de gegevens in voor uw platte dak</h4>
           <form onSubmit={this.handleSubmit} className='flex flex-col'>
