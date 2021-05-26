@@ -63,7 +63,7 @@ function Homepage() {
           Binnen drie stappen kunt u gratis uitvinden wat voor groendak het best bij uw wensen en situatie zou passen en hoe u hiermee aan de slag zou kunnen. 
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
-        <Link to='/1' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+        <Link to='/0' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
           Start
         </Link>
       </section>

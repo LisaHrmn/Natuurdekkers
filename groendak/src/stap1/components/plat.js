@@ -23,10 +23,10 @@ class Plat extends Component {
       gewichtNatuur = Math.floor(Math.random() * (10 - 8 + 1)) + 8;
       gewichtSolar = Math.floor(Math.random() * (12.5 - 10 + 1)) + 10;
 
-      knn.learn([gewichtEco, 2, 2, 1], "eco");
-      knn.learn([gewichtLicht, 1, 1, 2], "licht");
-      knn.learn([gewichtNatuur, 3, 5, 2], "natuur");
-      knn.learn([gewichtSolar, 2, 2, 2], "solar");
+      knn.learn([gewichtEco, 2, 2, 1], "Economisch");
+      knn.learn([gewichtLicht, 1, 1, 2], "Lichtgewicht");
+      knn.learn([gewichtNatuur, 3, 5, 2], "Natuur");
+      knn.learn([gewichtSolar, 2, 2, 2], "Solar");
     }
 
     this.state = {knn: knn, recommendation: "", prijsMin: "", prijsMax: "", done: false};
@@ -52,22 +52,22 @@ class Plat extends Component {
     let prediction = this.state.knn.classify([gewicht, water, bio, onderhoud])
     console.log(prediction)
 
-    if(prediction === "licht")
+    if(prediction === "Lichtgewicht")
     {
       prijsMin = oppervlak * 35;
       prijsMax = oppervlak * 60;
     }
-    else if(prediction === "eco")
+    else if(prediction === "Economisch")
     {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 55;
     }
-    else if(prediction === "natuur")
+    else if(prediction === "Natuur")
     {
       prijsMin = oppervlak * 45;
       prijsMax = oppervlak * 80;
     }
-    else if(prediction === "solar")
+    else if(prediction === "Solar")
     {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 25;
