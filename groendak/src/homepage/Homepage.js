@@ -13,7 +13,6 @@ import solar from '../img/solar.jpg';
 function Homepage() {
   return (
     <div>
-
       <section className='p-3 text-center'>
         <h3 className='pt-3 text-green-600 font-semibold'>Groene Daken</h3>
         <p className='p-2 max-w-prose m-auto'>
