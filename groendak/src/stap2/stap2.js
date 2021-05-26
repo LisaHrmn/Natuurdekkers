@@ -1,4 +1,3 @@
-import './stap2.css';
 import React, { Component } from 'react';
 
 class Stap2 extends Component {
@@ -10,10 +9,10 @@ class Stap2 extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Aanbeveling: {this.props.location.state.recommendation}</h2>
-        <h3>Min prijs: {this.props.location.state.prijsMin}</h3>
-        <h3>Max prijs: {this.props.location.state.prijsMax}</h3>
+      <div className='text-center'>
+        <h2 className='pt-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
+        <h3 className='pt-3'><span className='text-green-600'>Minimale prijs:</span> {this.props.location.state.prijsMin} euro</h3>
+        <h3 className='pt-3'><span className='text-green-600'>Maximale prijs:</span> {this.props.location.state.prijsMax} euro</h3>
       </div>
     );
   }
