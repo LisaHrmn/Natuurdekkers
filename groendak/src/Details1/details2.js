@@ -7,12 +7,9 @@ import subplaceholder1 from "./images/sub-placeholder1.png";
 import subplaceholder2 from "./images/sub-placeholder2.png";
 import subplaceholder3 from "./images/sub-placeholder3.png";
 import info from "./images/info.png";
-import dak1 from "./images/eco/dak1.png";
-import dak2 from "./images/eco/dak2.png";
-import dak3 from "./images/eco/dak3.png";
-import dak4 from "./images/eco/dak4.png";
-import dak5 from "./images/eco/dak5.png";
-import dak6 from "./images/eco/dak6.png";
+import dak1 from "./images/licht/dak1.png";
+import dak2 from "./images/licht/dak2.png";
+import dak3 from "./images/licht/dak3.png";
 
 function Details1() {
   return (
@@ -34,11 +31,11 @@ function Details1() {
   <div class="column2">
     <a href="/D3"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
   </div>
-  <div class="column2">
-    <a href="/D2"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
-  </div>
   <div class="column1">
-    <a href="/D1"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
+    <a href="/D2"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
+  </div>
+  <div class="column2">
+    <a href="/D1"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
   </div>
 
   </div>
@@ -60,13 +57,13 @@ function Details1() {
        </div>
         </div> */}
 
-<h1 class=" text-left pl-9">Economish groen dak</h1>
+<h1 class=" text-left pl-9">Lichtgewicht groen dak</h1>
 
 
 
         <div class="break-words w-1/2 bg-gray-200 ml-auto rounded-l-lg inset-y-0 right-0 float-right">
   <h2 class="text-center">descriptie</h2>
-  <p class="  p-2">Een groendak is een slimme investering voor een dak. Het economisch groendak is een extra voordelig systeem met focus op een lage prijs. Er zijn voordelige mogelijkheden voor sedumtrays, sedummatten en sedumcassettes. Het economisch groendak is vaak wat meer werk om aan te leggen en in sommige gevallen kan het wat langer duren voordat het dak mooi groen is.  
+  <p class="  p-2">Bij het lichtgewicht groendak wordt er extra focus gelegd op het gewicht van het groen, zodat het op de meeste daken mogelijk is. Vooral bij oudere huizen kan de draagkracht van het dak soms laag zijn waardoor een zwaar groendak niet mogelijk is. De vuistregel bij een lichtgewicht groendak is dat het voor elk dak dat door volwassene beloopbaar is dit dak kan dragen. Ondanks dat er bij dit dak op moet worden gelet dat het gewicht laag blijft zijn er hier ook goedkope opties. 
 </p>
 
  </div>
@@ -84,10 +81,10 @@ Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak ka
 </span></div>
  
 <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
-  <ul class="text-left">gewicht: vanaf 50kg/m2</ul>
+  <ul class="text-left">gewicht: 40-50kg/m2</ul>
   <ul class="text-left">Dakhelling: 0-5°</ul>
   <ul class="text-left">plantensoort: Sedum-Mos</ul>
-  <ul class="text-left">Prijs: €25-55 per m2</ul>
+  <ul class="text-left">Prijs: €35-60 per m2</ul>
   <ul class="text-left">Waterbuffering: 20-30 liter per m2 </ul>
 </ul>
      
@@ -138,12 +135,7 @@ Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak ka
   <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak2} width="1200" height="800"></img></div>
 <div>
   <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak3} width="1200" height="800"></img></div>
-<div>
-  <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak4} width="1200" height="800"></img></div>
-<div>
-  <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak5} width="1200" height="800"></img></div>
-<div>
-  <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak6} width="1200" height="800"></img></div>
+
 
 
 {/* </ul> */}
