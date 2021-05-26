@@ -1,4 +1,3 @@
-import '../stap1.css';
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
