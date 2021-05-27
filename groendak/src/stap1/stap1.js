@@ -1,4 +1,3 @@
-import './stap1.css';
 import React, { Component } from 'react';
 import Plat from './components/plat';
 import Helling from './components/helling';
@@ -6,7 +5,6 @@ import Helling from './components/helling';
 class Stap1 extends Component {
   constructor() {
     super()
-
   }
 
   render() {

@@ -1,4 +1,3 @@
-import '../stap1.css';
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
@@ -24,13 +23,13 @@ class Plat extends Component {
       gewichtNatuur = Math.floor(Math.random() * (10 - 8 + 1)) + 8;
       gewichtSolar = Math.floor(Math.random() * (12.5 - 10 + 1)) + 10;
 
-      knn.learn([gewichtEco, 2, 2, 1], "eco");
-      knn.learn([gewichtLicht, 1, 1, 2], "licht");
-      knn.learn([gewichtNatuur, 3, 5, 2], "natuur");
-      knn.learn([gewichtSolar, 2, 2, 2], "solar");
+      knn.learn([gewichtEco, 2, 2, 1], "Economisch");
+      knn.learn([gewichtLicht, 1, 1, 2], "Lichtgewicht");
+      knn.learn([gewichtNatuur, 3, 5, 2], "Natuur");
+      knn.learn([gewichtSolar, 2, 2, 2], "Solar");
     }
 
-    this.state = {knn: knn, recommendation: "", prijsMin: "", prijsMax: "", done: false};
+    this.state = {knn: knn, recommendation: "", prijsMin: "", prijsMax: "", waarom: "", done: false};
   }
 
   handleSubmit(event) {
@@ -44,6 +43,8 @@ class Plat extends Component {
     let prijsMin;
     let prijsMax;
 
+    let waarom;
+
     gewicht = parseInt(gewicht);
     gewicht = gewicht / 10;
     water = parseInt(water);
@@ -53,31 +54,40 @@ class Plat extends Component {
     let prediction = this.state.knn.classify([gewicht, water, bio, onderhoud])
     console.log(prediction)
 
-    if(prediction === "licht")
+    if(prediction === "Lichtgewicht")
     {
       prijsMin = oppervlak * 35;
       prijsMax = oppervlak * 60;
+
+      waarom = "Op basis van de draagkracht heeft de AI gekozen dat een lichtgewicht dak het beste bij je past.";
     }
-    else if(prediction === "eco")
+    else if(prediction === "Economisch")
     {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 55;
+
+      waarom = "Waarom een economisch dak? Dat is een goede vraag.";
     }
-    else if(prediction === "natuur")
+    else if(prediction === "Natuur")
     {
       prijsMin = oppervlak * 45;
       prijsMax = oppervlak * 80;
+
+      waarom = "Waarom een natuur dak? Dat is een goede vraag.";
     }
-    else if(prediction === "solar")
+    else if(prediction === "Solar")
     {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 25;
+
+      waarom = "Waarom een solar dak? Dat is een goede vraag.";
     }
 
     this.setState({
       recommendation: prediction,
       prijsMin: prijsMin,
       prijsMax: prijsMax,
+      waarom: waarom,
       done: true
     }, () => {
       return this.state;
@@ -91,7 +101,7 @@ class Plat extends Component {
           <Redirect
             to={{
               pathname: "/2",
-              state: { recommendation: this.state.recommendation, prijsMin: this.state.prijsMin, prijsMax: this.state.prijsMax },
+              state: { recommendation: this.state.recommendation, prijsMin: this.state.prijsMin, prijsMax: this.state.prijsMax, waarom: this.state.waarom },
             }}
           />
         </div>
@@ -99,11 +109,11 @@ class Plat extends Component {
     }
     else {
       return (
-        <div className='text-center pb-48'>
+        <div className='text-center'>
           <h2 className='pt-3'>Gegevens plat dak:</h2>
           <h4 className='pt-3'>Vul hier de gegevens in voor uw platte dak</h4>
           <form onSubmit={this.handleSubmit} className='flex flex-col'>
-            <label htmlFor="gewicht" className='pt-5'>Gewicht in KG</label>
+            <label htmlFor="gewicht" className='pt-5'>Draagkracht per m²</label>
             <input id="gewicht" type='number' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
 
             <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
