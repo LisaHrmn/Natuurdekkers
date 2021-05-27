@@ -14,8 +14,8 @@ function Homepage() {
   return (
     <div>
 
-      <section className='p-3 text-center'>
-        <h3 className='pt-3 text-green-600 font-semibold'>Groene Daken</h3>
+      <section className='m-auto p-3'>
+        <h3 className='pt-3 text-green-600 font-semibold text-center'>Groene Daken</h3>
         <p className='p-2 max-w-prose m-auto'>
           Groene daken komen in alle vormen en maten. Zo zijn er verschillende mogelijkheden voor soorten beplanting en platte en hellende daken. 
           Een groendak heeft vele voordelen voor uw huis, zo zorgt een groendak voor betere waterafvoer en warmte- en geluidsisolatie en verhoogt het de levensduur van uw dak. 
@@ -31,7 +31,7 @@ function Homepage() {
         </p>
       </section>
 
-      <section className='p-3 font-bold text-center bg-gray-100'>
+      <section className='p-3 font-bold bg-gray-100 text-center'>
         <h3 className='pb-3 text-green-600 font-semibold'>Types</h3>
         <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls infinite>
           <div>
@@ -57,15 +57,17 @@ function Homepage() {
         </AliceCarousel>
       </section>
 
-      <section className='p-3 text-center'>
-        <h3 className='text-green-600 font-semibold'>Stappenplan</h3>
+      <section className='p-3'>
+        <h3 className='text-green-600 font-semibold text-center'>Stappenplan</h3>
         <p className='p-2 pb-5 max-w-prose m-auto'>
           Binnen drie stappen kunt u gratis uitvinden wat voor groendak het best bij uw wensen en situatie zou passen en hoe u hiermee aan de slag zou kunnen. 
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
+        <div className='text-center m-auto'>
         <Link to='/1' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
           Start
         </Link>
+        </div>
       </section>
 
       <div className='sm:mx-48 mx-0'>
