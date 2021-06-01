@@ -44,21 +44,21 @@ function Homepage() {
           <div style={{height: '28rem'}}>
             <img src={hellend} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Hellend groen dak'/>
             <p className='pb-7 text-green-700 font-semibold'>Hellend Groendak</p>
-            <Link to='/Lichtgewicht' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+            <Link to='/Hellend' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
           <div style={{height: '28rem'}}>
             <img src={licht} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Licht gewicht groen dak'/>
             <p className='pb-7 text-green-700 font-semibold'>Lichtgewicht Groendak</p>
-            <Link to='/Natuur' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+            <Link to='/Lichtgewicht' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
           <div style={{height: '28rem'}}>
             <img src={natuur} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Natuur groen dak'/>
             <p className='pb-7 text-green-700 font-semibold'>Natuur Groendak</p>
-            <Link to='/Hellend' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+            <Link to='/Natuur' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>

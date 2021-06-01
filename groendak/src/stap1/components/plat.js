@@ -82,21 +82,21 @@ class Plat extends Component {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 55;
 
-      waarom = "Waarom een economisch dak? Dat is een goede vraag.";
+      waarom = "Op basis van de prijs heeft de AI gekozen dat een economisch dak goed bij je past.";
     }
     else if(prediction === "Natuur")
     {
       prijsMin = oppervlak * 45;
       prijsMax = oppervlak * 80;
 
-      waarom = "Waarom een natuur dak? Dat is een goede vraag.";
+      waarom = "Op basis van het biodiversiteit heeft de AI gekozen dat een natuur dak goed bij je past.";
     }
     else if(prediction === "Solar")
     {
       prijsMin = oppervlak * 25;
       prijsMax = oppervlak * 25;
 
-      waarom = "Waarom een solar dak? Dat is een goede vraag.";
+      waarom = "Op basis van de draagkracht en de interesse in zonnepalenel heeft de AI gekozen dat een solar dak goed bij je past.";
     }
 
     this.setState({
