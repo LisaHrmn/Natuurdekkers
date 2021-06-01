@@ -39,6 +39,27 @@ class Vervolgeconomisch extends Component {
                     linkjes voor meer informatie over de leverancier en de opties.
 
                 </p>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groendakwebshop.nl/">Groendakwebshop.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groendakwebshop.nl/">Sedumstek Pakket</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groendakwebshop.nl/">Sedumplant Pakket</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groendakwebshop.nl/">Sedumplant Pakket</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://groendaktotaal.nl/">groendaktotaal.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://groendaktotaal.nl/shop.html/plat-dak.html">Sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">www.groenedaken.net</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a>
+
             </div>
         );
     }

@@ -39,6 +39,24 @@ class Vervolglicht extends Component {
                     cassettes en tapijten zijn iets duurder maar makkelijker aan te leggen en gelijk mooi. Klik op
                     de linkjes voor meer informatie over de leverancier en de opties.
                 </p>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://webwinkel.groendakcoach.nl/">groendakcoach.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://webwinkel.groendakcoach.nl/product/lichtgewicht-sedumpakket/">Lichtgewicht sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenbedekking.net/">groenbedekking.net</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenbedekking.net/product/totaalsysteem-lichtgewicht-groendak/">Lichtgewich Sedummatten</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenbedekking.net/product/sedumtrays-lichtgewicht-sedumcassettes-per-m2/">Lichtgewich Sedumcassettes</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groenedaken.net</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-59800863/groendak-home/sedumtapijt-light-pakket-prijs-v-a/#description">Lichtgewicht Sedumtapijt</a>
             </div>
         );
     }

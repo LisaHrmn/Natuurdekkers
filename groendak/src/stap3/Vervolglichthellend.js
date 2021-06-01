@@ -36,6 +36,15 @@ class Vervolglichthellend extends Component {
                 <p>
                     Klik op de linkjes voor meer informatie over de leverancier en de opties.
                 </p>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://groendaktotaal.nl/">groendaktotaal.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://groendaktotaal.nl/shop.html/schuin-dak-5-20-graden.html">Schuin dak sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groeedaken.net</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-38054978/groendak-webshop/licht-hellend-pakket-prijs-v-a/#description">Schuin dak sedummatten</a>
             </div>
         );
     }

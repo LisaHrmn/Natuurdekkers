@@ -37,6 +37,15 @@ class Vervolgsolar extends Component {
                     Sedummaten zijn de beste optie bij solargroendaken omdat deze gemakkelijk rondom de zonnepanelen
                     zijn neer te leggen en deze gelijk groen zijn waardoor ze het snelst effectief werken.
                 </p>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://groendaktotaal.nl/">groendaktotaal.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://groendaktotaal.nl/shop.html/plat-dak.html">Sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groenedaken.net</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a>
             </div>
         );
     }

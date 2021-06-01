@@ -35,6 +35,22 @@ class Vervolgschuinhellend extends Component {
                 <p>
                     Klik op de linkjes voor meer informatie over de leverancier en de opties.
                 </p>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groendakwebshop.nl/">groendakwebshop.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/sedumpakket-voor-schuindak.html">Schuin dak sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groenedaken.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-38055320/groendak-webshop/schuin-hellend-pakket-prijs-v-a/#description">Schuin dak sedummatten</a>
+                <br/>
+                <br/>
+                <a className="text-lg text-blue-800" href="https://groendaktotaal.nl/">groendaktotaal.nl</a>
+                <br/>
+                <a className="text-base text-blue-800" href="https://groendaktotaal.nl/shop.html/schuindak-20-30-graden.html">Schuin dak sedummatten</a>
+                <br/>
+                <br/>
             </div>
         );
     }
