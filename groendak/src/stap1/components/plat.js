@@ -3,7 +3,7 @@ import { Redirect } from 'react-router';
 
 class Plat extends Component {
   constructor() {
-    super()
+    super();
     this.handleSubmit = this.handleSubmit.bind(this);
 
     const generator = require('knear');
@@ -23,10 +23,10 @@ class Plat extends Component {
       gewichtNatuur = Math.floor(Math.random() * (10 - 8 + 1)) + 8;
       gewichtSolar = Math.floor(Math.random() * (12.5 - 10 + 1)) + 10;
 
-      knn.learn([gewichtEco, 2, 2, 1], "Economisch");
-      knn.learn([gewichtLicht, 1, 1, 2], "Lichtgewicht");
-      knn.learn([gewichtNatuur, 3, 5, 2], "Natuur");
-      knn.learn([gewichtSolar, 2, 2, 2], "Solar");
+      knn.learn([gewichtEco, 2, 2, 1, 1], "Economisch");
+      knn.learn([gewichtLicht, 1, 1, 2, 2], "Lichtgewicht");
+      knn.learn([gewichtNatuur, 3, 5, 2, 3], "Natuur");
+      //knn.learn([gewichtSolar, 2, 2, 2], "Solar");
     }
 
     this.state = {knn: knn, recommendation: "", prijsMin: "", prijsMax: "", waarom: "", done: false};
@@ -39,6 +39,9 @@ class Plat extends Component {
     let bio = document.getElementById("bio").value;
     let onderhoud = document.getElementById("onderhoud").value;
     let oppervlak = document.getElementById("oppervlak").value;
+    let kosten = document.getElementById("kosten").value;
+
+    let zon = document.getElementById("zon").value;
 
     let prijsMin;
     let prijsMax;
@@ -51,7 +54,17 @@ class Plat extends Component {
     bio = parseInt(bio);
     onderhoud = parseInt(onderhoud);
 
-    let prediction = this.state.knn.classify([gewicht, water, bio, onderhoud])
+    let prediction = "";
+
+    if(zon == "ja" && gewicht >= 10)
+    {
+      prediction = "Solar";
+    }
+    else
+    {
+      prediction = this.state.knn.classify([gewicht, water, bio, onderhoud, kosten])
+    }
+
     console.log(prediction)
 
     if(prediction === "Lichtgewicht")
@@ -109,31 +122,60 @@ class Plat extends Component {
     }
     else {
       return (
-        <div className='text-center'>
-          <h2 className='pt-3'>Gegevens plat dak:</h2>
-          <h4 className='pt-3'>Vul hier de gegevens in voor uw platte dak</h4>
-          <form onSubmit={this.handleSubmit} className='flex flex-col'>
-            <label htmlFor="gewicht" className='pt-5'>Draagkracht per m²</label>
-            <input id="gewicht" type='number' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+        <div className="w-full flex justify-center">
+          <div className='w-full flex flex-col p-5 pt-1'>
+            <h2 className='pt-3 pb-2'>Gegevens plat dak:</h2>
+            <form onSubmit={this.handleSubmit} className='m-auto mt-0 mb-0'>
+              <div className="flex justify-around">
+                <div className="flex flex-col border p-3 m-2 w-1/3">
+                <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
+                <label htmlFor="gewicht" className='pt-5'>Draagkracht per m²</label>
+                <input id="gewicht" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
 
-            <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
-            <input id="oppervlak" type='number' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+                <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+                <input id="oppervlak" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
+                </div>
+                <br/>
+                <div className="flex flex-col border p-3 m-2 w-1/3">
+                  <h4 className='text-green-600'>Vul hier de gewenste specificaties in van het groene dak</h4>
+                  <label htmlFor="water" className='pt-5'>Hoe hoog mag de waterbuffering zijn?</label>
+                  <select name="water" id="water" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required>
+                    <option disabled selected value="">Kies...</option>
+                    <option value="1">Laag</option>
+                    <option value="2">Middel</option>
+                    <option value="3">Hoog</option>
+                  </select>
 
-            <label htmlFor="water" className='pt-5'>Waterretentie (1-3)</label>
-            <input id="water" type='number' min='1' max='3' className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+                  <label htmlFor="bio" className='pt-5'>Hoeveel biodiversiteit wil dat je het groene dak heeft op een schaal van 1 tot 5?</label>
+                  <input id="bio" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
 
-            <label htmlFor="bio" className='pt-5'>Biodiversiteit (1-5)</label>
-            <input id="bio" type='number' min="1" max="5" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
+                  <label htmlFor="onderhoud" className='pt-5'>Hoe onderhoudsintensief mag het groene dak zijn op een schaal van 1 tot 5?</label>
+                  <input id="onderhoud" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
 
-            <label htmlFor="onderhoud" className='pt-5'>Onderhoud (1-5)</label>
-            <input id="onderhoud" type='number' min="1" max="5" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
-
-            <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
-          </form>
+                  <label htmlFor="kosten" className='pt-5'>Hoe hoog mogen de kosten zijn?</label>
+                  <select name="kosten" id="kosten" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required>
+                    <option disabled selected value="">Kies...</option>
+                    <option value="1">Laag</option>
+                    <option value="2">Middel</option>
+                    <option value="3">Hoog</option>
+                  </select>
+                  <label htmlFor="zon" className='pt-5'>Is er interesse in zonnepanelen op het dak?</label>
+                  <select name="zon" id="zon" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required>
+                    <option disabled selected value="">Kies...</option>
+                    <option value="ja">Ja</option>
+                    <option value="nee">Nee</option>
+                  </select>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       );
     }
   }
-}
+};
 
 export default Plat;

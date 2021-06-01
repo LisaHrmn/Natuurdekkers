@@ -57,7 +57,7 @@ class Helling extends Component {
   }
 
   render() {
-    if (this.state.done == true) {
+    if (this.state.done === true) {
       return (
         <div>
           <Redirect
@@ -77,7 +77,6 @@ class Helling extends Component {
           <form onSubmit={this.handleSubmit} className='flex flex-col'>
             <label htmlFor="graden" className='pt-5'>Dak helling in graden°:</label>
             <input id="graden" type="number" min="1" max="45" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
-            <br/>
             <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
             <input id="oppervlak" type="number" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
             <br/>
