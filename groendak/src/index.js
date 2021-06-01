@@ -17,7 +17,7 @@ import Details2 from'./Details1/details2';
 import Details3 from'./Details1/details3';
 import Details4 from'./Details1/details4';
 import Details5 from'./Details1/details5';
-
+import Handleiding from './Handleiding/handleiding';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -62,6 +62,10 @@ ReactDOM.render(
         )}/>
                  <Route path='/Solar' render={props =>(
           <Details5 />
+        )}/>
+
+<Route path='/Handleiding' render={props =>(
+          <Handleiding />
         )}/>
       
        
