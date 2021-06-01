@@ -48,19 +48,19 @@ ReactDOM.render(
         <Route path='/3' render={ props => (
           <Stap3 />
         )}/>
-        <Route path='/D1' render={props =>(
+        <Route path='/Economisch' render={props =>(
           <Details1 />
         )}/>
-         <Route path='/D2' render={props =>(
+         <Route path='/Lichtgewicht' render={props =>(
           <Details2 />
         )}/>
-                 <Route path='/D3' render={props =>(
+                 <Route path='/Natuur' render={props =>(
           <Details3 />
         )}/>
-                 <Route path='/D4' render={props =>(
+                 <Route path='/Hellend' render={props =>(
           <Details4 />
         )}/>
-                 <Route path='/D5' render={props =>(
+                 <Route path='/Solar' render={props =>(
           <Details5 />
         )}/>
       
