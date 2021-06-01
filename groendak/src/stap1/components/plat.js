@@ -142,9 +142,7 @@ class Plat extends Component {
                 <div className="flex flex-col border p-3 m-2 w-1/3">
                   <h4 className='text-green-600'>Vul hier de gewenste specificaties in van het groene dak</h4>
                   <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
-          <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
-              <br></br><br></br>
-              Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
+          <span class="tooltiptext">Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
               <br></br><br></br>
               biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
           </span>
