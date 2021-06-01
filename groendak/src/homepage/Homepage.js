@@ -31,38 +31,43 @@ function Homepage() {
         </p>
       </section>
 
-      <section className='p-3 font-bold text-center'>
-        <h3 className='pb-3 text-green-600 font-semibold'>Types</h3>
+      <section className='p-3 font-bold text-center bg-gray-100'>
+        <h3 className='pb-5 text-green-600 font-semibold'>Types</h3>
         <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls infinite>
-          <div>
-          <a href="/Economisch">
+          <div className='h-96'>
             <img src={eco} className='m-auto w-1/3 h-auto object-contain' alt='Economisch groen dak'/>
-            <p className='text-green-700 font-semibold'>Economisch Groendak</p>
-            </a>
+            <p className='pb-5 text-green-700 font-semibold'>Economisch Groendak</p>
+            <Link to='/Economisch' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+              Lees meer
+            </Link>
           </div>
-          <div>
-          <a href="/Lichtgewicht">
+          <div className='h-96'>
             <img src={hellend} className='m-auto w-1/3 h-auto object-contain' alt='Hellend groen dak'/>
-            <p className='text-green-700 font-semibold'>Hellend Groendak</p>
-            </a>
+            <p className='pb-5 text-green-700 font-semibold'>Hellend Groendak</p>
+            <Link to='/Lichtgewicht' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+              Lees meer
+            </Link>
           </div>
-          <div>
-          <a href="/Natuur">
+          <div className='h-96'>
             <img src={licht} className='m-auto w-1/3 h-auto object-contain' alt='Licht gewicht groen dak'/>
-            <p className='text-green-700 font-semibold'>Lichtgewicht Groendak</p>
-            </a>
+            <p className='pb-5 text-green-700 font-semibold'>Lichtgewicht Groendak</p>
+            <Link to='/Natuur' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+              Lees meer
+            </Link>
           </div>
-          <div>
-          <a href="/Hellend">
+          <div className='h-96'>
             <img src={natuur} className='m-auto w-1/3 h-auto object-contain' alt='Natuur groen dak'/>
-            <p className='text-green-700 font-semibold'>Natuur Groendak</p>
-            </a>
+            <p className='pb-5 text-green-700 font-semibold'>Natuur Groendak</p>
+            <Link to='/Hellend' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+              Lees meer
+            </Link>
           </div>
-          <div>
-          <a href="/Solar">
+          <div className='h-96'>
             <img src={solar} className='m-auto w-1/3 h-auto object-contain' alt='Solar groen dak'/>
-            <p className='text-green-700 font-semibold'>Solar Groendak</p>
-            </a>
+            <p className='pb-5 text-green-700 font-semibold'>Solar Groendak</p>
+            <Link to='/Solar' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+              Lees meer
+            </Link>
           </div>
         </AliceCarousel>
       </section>
@@ -74,9 +79,9 @@ function Homepage() {
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
         <div className='text-center m-auto'>
-        <Link to='/0' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
-          Start
-        </Link>
+          <Link to='/0' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+            Start
+          </Link>
         </div>
       </section>
 
