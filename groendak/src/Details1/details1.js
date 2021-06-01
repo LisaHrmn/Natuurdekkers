@@ -22,6 +22,25 @@ function Details1() {
       <a class="text-left underline pl-2" href="/">terug</a>
 
       <div class="row">
+
+<div class="column2">
+    <a href="/Solar"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+  </div>
+  <div class="column2">
+    <a href="/Hellend"><img src={subplaceholder3}  alt="Forest" width="40" height="80"></img></a>
+  </div>
+  <div class="column2">
+    <a href="/Natuur"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+  </div>
+  <div class="column2">
+    <a href="/Lichtgewicht"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+  </div>
+  <div class="column1">
+    <a href="/Economisch"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
+  </div>
+
+  </div>
+      {/* <div class="row">
         <div class="column3">
           <a class= "arrow right" href="/"></a>
       </div>
@@ -67,7 +86,8 @@ function Details1() {
     {/* <div class="column4">
     <i class= "arrow right"></i>
     </div> */}
-      <AliceCarousel>
+    <div className="text-center m-auto mt-20">
+    <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" >
      {/* <div class="column5"> */}
       {/* <ul class= "ulr"> */}
   {/* <ul><div class="gallery">
@@ -112,6 +132,7 @@ function Details1() {
     </div> */}
       <div class= "p-10"><img src={placeholder} alt="placeholder" width="600" height="300"></img></div>
       
+      </div>
       </div>
       </div>
     
