@@ -64,9 +64,9 @@ function Homepage() {
           Bekijk de stappen hieronder of klik op start om te beginnen. 
         </p>
         <div className='text-center m-auto'>
-        <Link to='/0' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
-          Start
-        </Link>
+          <Link to='/0' className='py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
+            Start
+          </Link>
         </div>
       </section>
 
