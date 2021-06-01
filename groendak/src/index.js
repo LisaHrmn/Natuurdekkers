@@ -12,7 +12,12 @@ import Stap0 from './stap0/stap0';
 import Stap1 from'./stap1/stap1';
 import Stap2 from'./stap2/stap2';
 import Stap3 from'./stap3/stap3';
-import Details1 from'./details1/details1';
+import Details1 from'./Details1/details1';
+import Details2 from'./Details1/details2';
+import Details3 from'./Details1/details3';
+import Details4 from'./Details1/details4';
+import Details5 from'./Details1/details5';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -43,11 +48,23 @@ ReactDOM.render(
         <Route path='/3' render={ props => (
           <Stap3 />
         )}/>
-
-        <Route path='/d1' render={ props => (
+        <Route path='/Economisch' render={props =>(
           <Details1 />
         )}/>
-
+         <Route path='/Lichtgewicht' render={props =>(
+          <Details2 />
+        )}/>
+                 <Route path='/Natuur' render={props =>(
+          <Details3 />
+        )}/>
+                 <Route path='/Hellend' render={props =>(
+          <Details4 />
+        )}/>
+                 <Route path='/Solar' render={props =>(
+          <Details5 />
+        )}/>
+      
+       
         < Footer />
       </div>
     </Router>
