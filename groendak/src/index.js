@@ -12,11 +12,11 @@ import Stap0 from './stap0/stap0';
 import Stap1 from'./stap1/stap1';
 import Stap2 from'./stap2/stap2';
 import Stap3 from'./stap3/stap3';
-import Details1 from'./details1/details1';
-import Details2 from'./details1/details2';
-import Details3 from'./details1/details3';
-import Details4 from'./details1/details4';
-import Details5 from'./details1/details5';
+import Details1 from'./Details1/details1';
+import Details2 from'./Details1/details2';
+import Details3 from'./Details1/details3';
+import Details4 from'./Details1/details4';
+import Details5 from'./Details1/details5';
 
 
 import reportWebVitals from './reportWebVitals';
