@@ -5,7 +5,6 @@ import Helling from './components/helling';
 class Stap1 extends Component {
   constructor() {
     super()
-
   }
 
   render() {
