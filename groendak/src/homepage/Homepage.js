@@ -34,37 +34,37 @@ function Homepage() {
       <section className='p-3 font-bold text-center bg-gray-100'>
         <h3 className='pb-5 text-green-600 font-semibold'>Types</h3>
         <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls infinite>
-          <div className='h-96'>
-            <img src={eco} className='m-auto w-1/3 h-auto object-contain' alt='Economisch groen dak'/>
-            <p className='pb-5 text-green-700 font-semibold'>Economisch Groendak</p>
+          <div style={{height: '28rem'}}>
+            <img src={eco} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Economisch groen dak'/>
+            <p className='pb-7 text-green-700 font-semibold'>Economisch Groendak</p>
             <Link to='/Economisch' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
-          <div className='h-96'>
-            <img src={hellend} className='m-auto w-1/3 h-auto object-contain' alt='Hellend groen dak'/>
-            <p className='pb-5 text-green-700 font-semibold'>Hellend Groendak</p>
+          <div style={{height: '28rem'}}>
+            <img src={hellend} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Hellend groen dak'/>
+            <p className='pb-7 text-green-700 font-semibold'>Hellend Groendak</p>
             <Link to='/Lichtgewicht' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
-          <div className='h-96'>
-            <img src={licht} className='m-auto w-1/3 h-auto object-contain' alt='Licht gewicht groen dak'/>
-            <p className='pb-5 text-green-700 font-semibold'>Lichtgewicht Groendak</p>
+          <div style={{height: '28rem'}}>
+            <img src={licht} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Licht gewicht groen dak'/>
+            <p className='pb-7 text-green-700 font-semibold'>Lichtgewicht Groendak</p>
             <Link to='/Natuur' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
-          <div className='h-96'>
-            <img src={natuur} className='m-auto w-1/3 h-auto object-contain' alt='Natuur groen dak'/>
-            <p className='pb-5 text-green-700 font-semibold'>Natuur Groendak</p>
+          <div style={{height: '28rem'}}>
+            <img src={natuur} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Natuur groen dak'/>
+            <p className='pb-7 text-green-700 font-semibold'>Natuur Groendak</p>
             <Link to='/Hellend' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
           </div>
-          <div className='h-96'>
-            <img src={solar} className='m-auto w-1/3 h-auto object-contain' alt='Solar groen dak'/>
-            <p className='pb-5 text-green-700 font-semibold'>Solar Groendak</p>
+          <div style={{height: '28rem'}}>
+            <img src={solar} className='pb-2 m-auto sm:w-1/4 h-auto object-contain' alt='Solar groen dak'/>
+            <p className='pb-7 text-green-700 font-semibold'>Solar Groendak</p>
             <Link to='/Solar' className='mb-3 py-2 px-8 px-none bg-green-600 hover:bg-green-800 text-gray-50 border-solid border-1 border-green-800 rounded-md'>
               Lees meer
             </Link>
