@@ -98,7 +98,7 @@ Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak ka
     {/* <div class="column4">
     <i class= "arrow right"></i>
     </div> */}
-    <div className="text-center m-auto">
+   <div className="text-center m-auto mt-20">
     <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" >
      {/* <div class="column5"> */}
       {/* <ul class= "ulr"> */}
