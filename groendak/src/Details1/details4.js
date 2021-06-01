@@ -50,12 +50,14 @@ function Details1() {
 
         </div>     
 
+        {/* descriptie */}
         <h1 class=" text-left pl-9">Hellend groen dak</h1>
         <div class="break-words w-1/2 bg-gray-200 ml-auto rounded-l-lg inset-y-0 right-0 float-right">
           <h2 class="text-center">descriptie</h2>
           <p class="  p-2">Het hellend groendak is speciaal bedoeld voor schuine daken. Afhankelijk van de hellingsgraad en dakspecificaties zijn er verschillende mogelijkheden voor een hellend groen dak. Om te voorkomen dat het groen van het dak afschuift kunnen er voor erg schuine daken spullen nodig zijn als een anti-afschuifmat, een dak ribbel en/of rasterplaten. Doordat dit dak helt kunnen er op het groendak wel eerder mos of kale plekken ontstaan. Bij dit dak zal het water ook sneller aflopen, waardoor er vaak een dikkere onderlaag nodig is.</p>
         </div>
 
+        {/* technische informatie */}
         <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
         <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
           <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
@@ -77,7 +79,8 @@ function Details1() {
           <ul class="text-left">Prijs: €40-70 per m2</ul>
           <ul class="text-left">Waterbuffering: 25-35 liter per m2 </ul>
         </ul>
-     
+
+        {/* foto carousel */}
         <div className="text-center m-auto mt-20">
           <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" >     
             <div>
