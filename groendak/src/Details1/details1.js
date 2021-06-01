@@ -26,19 +26,19 @@ function Details1() {
       <div class="row">
 
 <div class="column2">
-    <a href="/D5"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+    <a href="/Solar"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
   </div>
   <div class="column2">
-    <a href="/D4"><img src={subplaceholder3}  alt="Forest" width="40" height="80"></img></a>
+    <a href="/Hellend"><img src={subplaceholder3}  alt="Forest" width="40" height="80"></img></a>
   </div>
   <div class="column2">
-    <a href="/D3"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+    <a href="/Natuur"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
   </div>
   <div class="column2">
-    <a href="/D2"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+    <a href="/Lichtgewicht"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
   </div>
   <div class="column1">
-    <a href="/D1"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
+    <a href="/Economisch"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
   </div>
 
   </div>
@@ -101,7 +101,7 @@ Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak ka
     {/* <div class="column4">
     <i class= "arrow right"></i>
     </div> */}
-    <div className="text-center m-auto">
+    <div className="text-center m-auto mt-20">
     <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" >
      {/* <div class="column5"> */}
       {/* <ul class= "ulr"> */}
