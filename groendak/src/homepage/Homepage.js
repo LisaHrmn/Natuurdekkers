@@ -35,51 +35,31 @@ function Homepage() {
         <h3 className='pb-3 text-green-600 font-semibold'>Types</h3>
         <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls infinite>
           <div>
-<<<<<<< HEAD
-          <a href="/d1">
-=======
           <a href="/Economisch">
->>>>>>> de3d473d1a2752b6e5ef21fa2683ff832ad5e061
             <img src={eco} className='m-auto w-1/3 h-auto object-contain' alt='Economisch groen dak'/>
             <p className='text-green-700 font-semibold'>Economisch Groendak</p>
             </a>
           </div>
           <div>
-<<<<<<< HEAD
-          <a href="/d2">
-=======
           <a href="/Lichtgewicht">
->>>>>>> de3d473d1a2752b6e5ef21fa2683ff832ad5e061
             <img src={hellend} className='m-auto w-1/3 h-auto object-contain' alt='Hellend groen dak'/>
             <p className='text-green-700 font-semibold'>Hellend Groendak</p>
             </a>
           </div>
           <div>
-<<<<<<< HEAD
-          <a href="/d3">
-=======
           <a href="/Natuur">
->>>>>>> de3d473d1a2752b6e5ef21fa2683ff832ad5e061
             <img src={licht} className='m-auto w-1/3 h-auto object-contain' alt='Licht gewicht groen dak'/>
             <p className='text-green-700 font-semibold'>Lichtgewicht Groendak</p>
             </a>
           </div>
           <div>
-<<<<<<< HEAD
-          <a href="/d4">
-=======
           <a href="/Hellend">
->>>>>>> de3d473d1a2752b6e5ef21fa2683ff832ad5e061
             <img src={natuur} className='m-auto w-1/3 h-auto object-contain' alt='Natuur groen dak'/>
             <p className='text-green-700 font-semibold'>Natuur Groendak</p>
             </a>
           </div>
           <div>
-<<<<<<< HEAD
-          <a href="/d5">
-=======
           <a href="/Solar">
->>>>>>> de3d473d1a2752b6e5ef21fa2683ff832ad5e061
             <img src={solar} className='m-auto w-1/3 h-auto object-contain' alt='Solar groen dak'/>
             <p className='text-green-700 font-semibold'>Solar Groendak</p>
             </a>
