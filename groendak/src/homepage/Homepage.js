@@ -31,28 +31,38 @@ function Homepage() {
         </p>
       </section>
 
-      <section className='p-3 font-bold bg-gray-100 text-center'>
-        <h2 className='pb-3 text-green-600 font-semibold'>Types</h2>
+      <section className='p-3 font-bold text-center'>
+        <h3 className='pb-3 text-green-600 font-semibold'>Types</h3>
         <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls infinite>
           <div>
-            <img src={eco} className='m-auto sm:w-1/3 h-auto object-contain' alt='Economisch groen dak'/>
-            <h3 className='text-green-700 font-semibold pt-2'>Economisch Groendak</h3>
+          <a href="/Economisch">
+            <img src={eco} className='m-auto w-1/3 h-auto object-contain' alt='Economisch groen dak'/>
+            <p className='text-green-700 font-semibold'>Economisch Groendak</p>
+            </a>
           </div>
           <div>
-            <img src={hellend} className='m-auto sm:w-1/3 h-auto object-contain' alt='Hellend groen dak'/>
-            <h3 className='text-green-700 font-semibold pt-2'>Hellend Groendak</h3>
+          <a href="/Lichtgewicht">
+            <img src={hellend} className='m-auto w-1/3 h-auto object-contain' alt='Hellend groen dak'/>
+            <p className='text-green-700 font-semibold'>Hellend Groendak</p>
+            </a>
           </div>
           <div>
-            <img src={licht} className='m-auto sm:w-1/3 h-auto object-contain' alt='Licht gewicht groen dak'/>
-            <h3 className='text-green-700 font-semibold pt-2'>Lichtgewicht Groendak</h3>
+          <a href="/Natuur">
+            <img src={licht} className='m-auto w-1/3 h-auto object-contain' alt='Licht gewicht groen dak'/>
+            <p className='text-green-700 font-semibold'>Lichtgewicht Groendak</p>
+            </a>
           </div>
           <div>
-            <img src={natuur} className='m-auto sm:w-1/3 h-auto object-contain' alt='Natuur groen dak'/>
-            <h3 className='text-green-700 font-semibold pt-2'>Natuur Groendak</h3>
+          <a href="/Hellend">
+            <img src={natuur} className='m-auto w-1/3 h-auto object-contain' alt='Natuur groen dak'/>
+            <p className='text-green-700 font-semibold'>Natuur Groendak</p>
+            </a>
           </div>
           <div>
-            <img src={solar} className='m-auto sm:w-1/3 h-auto object-contain' alt='Solar groen dak'/>
-            <h3 className='text-green-700 font-semibold pt-2'>Solar Groendak</h3>
+          <a href="/Solar">
+            <img src={solar} className='m-auto w-1/3 h-auto object-contain' alt='Solar groen dak'/>
+            <p className='text-green-700 font-semibold'>Solar Groendak</p>
+            </a>
           </div>
         </AliceCarousel>
       </section>
