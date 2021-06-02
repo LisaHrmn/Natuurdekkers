@@ -6,7 +6,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'header': "url('../src/img/divider1.png')"
+      })
+    },
     colors: {
       // Build your palette here
       transparent: 'transparent',
@@ -31,5 +35,8 @@ module.exports = {
       })
     }),
     require('@tailwindcss/typography'),
+    require('@tailwindcss/forms')({
+      strategy: 'class',
+    }),
   ],
 }
