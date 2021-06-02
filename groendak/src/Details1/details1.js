@@ -82,7 +82,7 @@ function Details1() {
       
         {/* foto carousel */}
         <div className="text-center m-auto mt-20">
-          <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" >
+          <AliceCarousel autoPlay autoPlayInterval="5000" disableButtonsControls infinite animationDuration="1000" autoHeight>
             <div>
               <img className="m-auto sm:w-1/3 h-auto object-contain" src={dak1} width="1200" height="800"></img>
             </div>
