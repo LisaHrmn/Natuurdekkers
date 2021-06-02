@@ -57,7 +57,7 @@ function Details1() {
         </div>
 
         {/* technische informatie */}
-        <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
+        <h2 class=" text-left text-green-600 pl-16">Technische informatie</h2>
         <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
           <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
             <br></br><br></br>
@@ -72,9 +72,9 @@ function Details1() {
         </div>
  
         <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
-          <ul class="text-left">gewicht: vanaf 80kg/m2</ul>
+          <ul class="text-left">Gewicht: vanaf 80kg/m2</ul>
           <ul class="text-left">Dakhelling: 0-5°</ul>
-          <ul class="text-left">plantensoort: Sedum-Gras-Kruiden-Bloemen</ul>
+          <ul class="text-left">Plantensoort: Sedum-Gras-Kruiden-Bloemen</ul>
           <ul class="text-left">Prijs: €45-80 per m2</ul>
           <ul class="text-left">Waterbuffering: 30-70 liter per m2 </ul>
         </ul>

@@ -55,7 +55,7 @@ function Details1() {
           <p class="  p-2">Een solar groendak is de combinatie van zonnepanelen en groen op het dak. Met name op platte daken kan de temperatuur op warme daken wel oplopen tot 70 graden Celcius. Het rendement van zonnepanelen is echter optimaal bij een omgevingstemperatuur rond de 25 graden. Groendaken, voornamelijk met sedumplanten, houden de omgevingstemperatuur lager en daardoor verhoogt het rendement van de zonnepanelen tot wel 8%. </p>
         </div>
 
-        <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
+        <h2 class=" text-left text-green-600 pl-16">Technische informatie</h2>
         <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
           <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
             <br></br><br></br>
@@ -70,9 +70,9 @@ function Details1() {
         </div>
  
         <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
-          <ul class="text-left">gewicht: vanaf 100kg/m2</ul>
+          <ul class="text-left">Gewicht: vanaf 100kg/m2</ul>
           <ul class="text-left">Dakhelling: 0-5°</ul>
-          <ul class="text-left">plantensoort: Sedum</ul>
+          <ul class="text-left">Plantensoort: Sedum</ul>
           <ul class="text-left">Prijs: voor groen vanaf €25 per m2</ul>
           <ul class="text-left">Waterbuffering: 20-30 liter per m2 </ul>
         </ul>
