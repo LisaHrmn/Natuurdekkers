@@ -26,24 +26,24 @@ function Details1() {
         {/* navigation row */}
         <div class="row">
 
-          <div class="column2">
-            <a href="/Solar"><img src= {subplaceholder3} alt="Solar" width="40" height="80"></img></a>
+        <div class="column2">
+          <a href="/Solar"><div class="tooltip" ><img src= {subplaceholder3} alt="Solar" width="40" height="80"></img><span class="tooltiptext2">Solar groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Hellend"><img src={subplaceholder3}  alt="Hellend" width="40" height="80"></img></a>
-          </div>
-
-          <div class="column1">
-            <a href="/Natuur"><img src= {subplaceholder3} alt="Natuur" width="50" height="100"></img></a>
+          <a href="/Hellend"><div class="tooltip" ><img src= {subplaceholder3} alt="Hellend" width="40" height="80"></img><span class="tooltiptext2">Hellend groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Lichtgewicht"><img src= {subplaceholder3} alt="Lichtgewicht" width="40" height="80"></img></a>
+          <a href="/Natuur"><div class="tooltip" ><img src= {subplaceholder3} alt="Natuur" width="40" height="80"></img><span class="tooltiptext2">Natuur groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Economisch"><img src= {subplaceholder3} alt="Economisch" width="40" height="80"></img></a>
+          <a href="/Lichtgewicht"><div class="tooltip" ><img src= {subplaceholder3} alt="Lichtgewicht" width="40" height="80"></img><span class="tooltiptext2">Lichtgewicht groendak</span></div></a>
+          </div>
+
+          <div class="column2">
+          <a href="/Economisch"><div class="tooltip" ><img src= {subplaceholder3} alt="Economisch" width="40" height="80"></img><span class="tooltiptext2">Economisch groendak</span></div></a>
           </div>
 
         </div>
@@ -57,7 +57,7 @@ function Details1() {
         </div>
 
         {/* technische informatie */}
-        <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
+        <h2 class=" text-left text-green-600 pl-16">Technische informatie</h2>
         <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
           <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
             <br></br><br></br>
@@ -72,9 +72,9 @@ function Details1() {
         </div>
  
         <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
-          <ul class="text-left">gewicht: vanaf 80kg/m2</ul>
+          <ul class="text-left">Gewicht: vanaf 80kg/m2</ul>
           <ul class="text-left">Dakhelling: 0-5°</ul>
-          <ul class="text-left">plantensoort: Sedum-Gras-Kruiden-Bloemen</ul>
+          <ul class="text-left">Plantensoort: Sedum-Gras-Kruiden-Bloemen</ul>
           <ul class="text-left">Prijs: €45-80 per m2</ul>
           <ul class="text-left">Waterbuffering: 30-70 liter per m2 </ul>
         </ul>

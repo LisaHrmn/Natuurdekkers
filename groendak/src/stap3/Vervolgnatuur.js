@@ -17,6 +17,9 @@ class Vervolgnatuur extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
                 <h1>Natuur groendak</h1>
                 <p>
@@ -49,6 +52,7 @@ class Vervolgnatuur extends Component {
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-29015141-4641247/groendak-webshop/wildflower-pakket-prijs-v-a/#description">Grassen-Kruiden matten</a>
                 <br/>
                 <br/>
+            </div>
             </div>
         );
     }

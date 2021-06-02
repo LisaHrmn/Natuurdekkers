@@ -17,7 +17,11 @@ class Vervolglicht extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
+                
                 <h1>Lichtgewicht groendak</h1>
                 <p>
                     Het lichtgewicht groendak is een goede optie als uw dak niet een groot gewicht
@@ -57,6 +61,7 @@ class Vervolglicht extends Component {
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a>
                 <br/>
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-59800863/groendak-home/sedumtapijt-light-pakket-prijs-v-a/#description">Lichtgewicht Sedumtapijt</a>
+            </div>
             </div>
         );
     }

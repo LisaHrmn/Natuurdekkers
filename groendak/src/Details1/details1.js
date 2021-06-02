@@ -31,6 +31,7 @@ function Details1() {
             <a href="/Solar"><img src= {subplaceholder3} alt="Solar" width="40" height="80"></img></a>
           </div>
           
+          
           <div class="column2">
             <a href="/Hellend"><img src={subplaceholder3}  alt="Hellend" width="40" height="80"></img></a>
           </div>
@@ -50,7 +51,7 @@ function Details1() {
         </div>
 
         {/* descriptie */}
-        <h1 class=" text-left pl-9">Economish groen dak</h1>
+        <h1 class=" text-left pl-9">Economisch groen dak</h1>
 
         <div class="break-words w-1/2 bg-gray-200 ml-auto rounded-l-lg inset-y-0 right-0 float-right">
           <h2 class="text-center">descriptie</h2>
@@ -58,7 +59,7 @@ function Details1() {
         </div>
 
         {/* technische informatie */}
-        <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
+        <h2 class=" text-left text-green-600 pl-16">Technische informatie</h2>
         <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
           <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
             <br></br><br></br>
@@ -73,9 +74,9 @@ function Details1() {
         </div>
   
         <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
-          <ul class="text-left">gewicht: vanaf 50kg/m2</ul>
+          <ul class="text-left">Gewicht: vanaf 50kg/m2</ul>
           <ul class="text-left">Dakhelling: 0-5°</ul>
-          <ul class="text-left">plantensoort: Sedum-Mos</ul>
+          <ul class="text-left">Plantensoort: Sedum-Mos</ul>
           <ul class="text-left">Prijs: €25-55 per m2</ul>
           <ul class="text-left">Waterbuffering: 20-30 liter per m2 </ul>
         </ul>

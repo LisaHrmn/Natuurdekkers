@@ -17,7 +17,11 @@ class Vervolgeconomisch extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
+                    
                 <h1>Economisch groendak</h1>
                 <p>
                     Het economisch groendak wordt aangeraden als de voordeligste optie voor een groendak.
@@ -60,6 +64,7 @@ class Vervolgeconomisch extends Component {
                 <br/>
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a>
 
+            </div>
             </div>
         );
     }
