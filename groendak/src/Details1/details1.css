@@ -190,7 +190,11 @@ border-color: black;    }
 .tooltip {
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
   /*border-bottom: 1px dotted black;/* /* If you want dots under the hoverable text */
+=======
+  /* If you want dots under the hoverable text */
+>>>>>>> 417f2316a9f7821d115638900d8bc666cb0916a1
 }
 
 /* Tooltip text */
@@ -228,6 +232,23 @@ border-color: black;    }
   visibility: visible;
 }
 
+<<<<<<< HEAD
+=======
+/* /* Tooltip text / */
+.tooltip .tooltiptext2 {
+  visibility: hidden;
+  width: 100px;
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* / Position the tooltip text - see examples below! */ 
+  position: absolute;
+  z-index: 1;
+}
+>>>>>>> 417f2316a9f7821d115638900d8bc666cb0916a1
 .tooltip:hover .tooltiptext2 {
   visibility: visible;
 }

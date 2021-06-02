@@ -31,6 +31,7 @@ function Details1() {
           <a href="/Solar"><div class="tooltip" ><img src= {subplaceholder3} alt="Solar" width="40" height="80"></img><span class="tooltiptext2">Solar groendak</span></div></a>
           </div>
           
+          
           <div class="column2">
             <a href="/Hellend"><div class="tooltip" ><img src= {subplaceholder3} alt="Hellend" width="40" height="80"></img><span class="tooltiptext2">Solar groendak</span></div></a>
           
@@ -54,7 +55,7 @@ function Details1() {
         </div>
 
         {/* descriptie */}
-        <h1 class=" text-left pl-9">Economish groen dak</h1>
+        <h1 class=" text-left pl-9">Economisch groen dak</h1>
 
         <div class="break-words w-1/2 bg-gray-200 ml-auto rounded-l-lg inset-y-0 right-0 float-right">
           <h2 class="text-center">descriptie</h2>
@@ -62,6 +63,7 @@ function Details1() {
         </div>
 
         {/* technische informatie */}
+<<<<<<< HEAD
         <h2 class=" text-left text-green-600 pl-16">technische informatie</h2>
 
   
@@ -71,6 +73,28 @@ function Details1() {
           <ul class="text-left">plantensoort: Sedum-Mos<div class="tooltip" ><img src={info} alt="placeholder" width="15" height="15"></img> <span class="tooltiptext">Plantensoort: Voor verschillende groene daken zijn verschillende soorten planten het meest geschikt. </span></div></ul>
           <ul class="text-left">Prijs: €25-55 per m2<div class="tooltip" ><img src={info} alt="placeholder" width="15" height="15"></img> <span class="tooltiptext">Prijs: De prijs is een schatting voor de aanleg in euro’s per vierkante meter. Dit kan best breed zijn omdat de dak specificaties hier nog invloed op kunnen hebben. Mogelijk kunt u ook subsidie krijgen voor het aanleggen van een groendak, bekijk hier de mogelijkheden in uw omgeving.</span></div></ul>
           <ul class="text-left">Waterbuffering: 20-30 liter per m2 <div class="tooltip" ><img src={info} alt="placeholder" width="15" height="15"></img> <span class="tooltiptext">Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.</span></div></ul>
+=======
+        <h2 class=" text-left text-green-600 pl-16">Technische informatie</h2>
+        <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
+          <span class="tooltiptext">Gewicht: De draagkracht van het dak moet het gewicht van het groen aankunnen. Het gewicht is het verzadigd gewicht, oftewel het gewicht van het groendak als hij vol water staat.
+            <br></br><br></br>
+              Dakhelling: De dakhelling is in hoeveel graden het dak schuin kan zijn voor het groene dak. 
+            <br></br><br></br>
+              Plantensoort: Voor verschillende groene daken zijn verschillende soorten planten het meest geschikt. 
+            <br></br><br></br>
+              Prijs: De prijs is een schatting voor de aanleg in euro’s per vierkante meter. Dit kan best breed zijn omdat de dak specificaties hier nog invloed op kunnen hebben. Mogelijk kunt u ook subsidie krijgen voor het aanleggen van een groendak, bekijk hier de mogelijkheden in uw omgeving.
+            <br></br><br></br>
+              Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
+          </span>
+        </div>
+  
+        <ul class=" text-left pl-9 pt-3 divide-y max-w-max">
+          <ul class="text-left">Gewicht: vanaf 50kg/m2</ul>
+          <ul class="text-left">Dakhelling: 0-5°</ul>
+          <ul class="text-left">Plantensoort: Sedum-Mos</ul>
+          <ul class="text-left">Prijs: €25-55 per m2</ul>
+          <ul class="text-left">Waterbuffering: 20-30 liter per m2 </ul>
+>>>>>>> 417f2316a9f7821d115638900d8bc666cb0916a1
         </ul>
       
         {/* foto carousel */}

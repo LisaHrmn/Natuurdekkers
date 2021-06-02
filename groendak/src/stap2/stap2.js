@@ -60,11 +60,15 @@ class Stap2 extends Component {
         link=  <Link to={`/Vervolghellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Hellend dak</Link>
     }
     return (
+      <div>
+        {/* terug knop */}
+        <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
       <div className='text-center'>
         <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
         {image}
         <p>{this.props.location.state.waarom}</p>
         {link}
+      </div>
       </div>
     );
   }
