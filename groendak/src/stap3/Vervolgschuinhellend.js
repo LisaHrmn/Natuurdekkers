@@ -18,39 +18,36 @@ class Vervolgschuinhellend extends Component {
     render() {
         return (
             <div className='p-2 max-w-prose m-auto pb-5'>
-                <h1>Schuin hellend groendak</h1>
-                <p>
+                <h1 className='pt-3 text-green-600 font-semibold'>Schuin hellend groendak</h1>
+                <p className='py-2 pt-5'>
                     Het licht hellend groendak is geschikt voor daken met een helling tussen de 15° en 35°.
                     Hierbij is een anti-afschuifsysteem noodzakelijk.
                 </p>
-                <br/>
-                <p>
+                <p className='py-2'>
                     We hebben een aantal betrouwbare leveranciers met groendaken opties die passen bij
                     het schuin hellend groendak. De opties die we meegeven zijn goed geschikt voor het
                     zelf aanleggen van het groen, maar u kunt ook een aannemer inschakelen voor het aanleggen.
-                    Voordat u aan de slag gaat bekijk onze <Link to={`/Handleiding`} target="_blank" className='text-blue-800'>handleiding</Link> met tips en uitleg voor als u aan de slag
+                    Voordat u aan de slag gaat bekijk onze <Link to={`/Handleiding`} target="_blank" rel="noreferrer" className='text-green-600 hover:text-green-700 font-semibold'>handleiding</Link> met tips en uitleg voor als u aan de slag
                     wil gaan met het groendak.
                 </p>
-                <br/>
-                <p>
+                <p className='py-2 pb-5'>
                     Klik op de linkjes voor meer informatie over de leverancier en de opties.
                 </p>
-                <br/>
-                <a className="text-lg text-blue-800" href="https://www.groendakwebshop.nl/">groendakwebshop.nl</a>
-                <br/>
-                <a className="text-base text-blue-800" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/sedumpakket-voor-schuindak.html">Schuin dak sedummatten</a>
-                <br/>
-                <br/>
-                <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groenedaken.nl</a>
-                <br/>
-                <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-38055320/groendak-webshop/schuin-hellend-pakket-prijs-v-a/#description">Schuin dak sedummatten</a>
-                <br/>
-                <br/>
-                <a className="text-lg text-blue-800" href="https://groendaktotaal.nl/">groendaktotaal.nl</a>
-                <br/>
-                <a className="text-base text-blue-800" href="https://groendaktotaal.nl/shop.html/schuindak-20-30-graden.html">Schuin dak sedummatten</a>
-                <br/>
-                <br/>
+
+                <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Groendakwebshop.nl</a>
+                <ul className='py-2 pb-5'>
+                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/sedumpakket-voor-schuindak.html">Schuin dak sedummatten</a></li>
+                </ul>
+
+                <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/">Groenedaken.nl</a>
+                <ul className='py-2 pb-5'>
+                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-38055320/groendak-webshop/schuin-hellend-pakket-prijs-v-a/#description">Schuin dak sedummatten</a></li>
+                </ul>
+
+                <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/">Groendaktotaal.nl</a>
+                <ul className='py-2 pb-5'>
+                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/shop.html/schuindak-20-30-graden.html">Schuin dak sedummatten</a></li>
+                </ul>
             </div>
         );
     }
