@@ -62,6 +62,9 @@ class Helling extends Component {
     }
     else {
       return (
+        <div>
+          {/* terug knop */}
+          <a class=" text-2xl text-left underline pl-2" href="/0">terug</a>
         <div className='text-center'>
           <h2 className='pt-3'>Gegevens Hellend dak:</h2>
           <div className="flex flex-col border p-3 m-2 w-1/3">
@@ -75,6 +78,7 @@ class Helling extends Component {
             <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
           </form>
           </div>
+        </div>
         </div>
       );
     }

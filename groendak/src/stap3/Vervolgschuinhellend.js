@@ -17,6 +17,9 @@ class Vervolgschuinhellend extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
                 <h1 className='pt-3 text-green-600 font-semibold'>Schuin hellend groendak</h1>
                 <p className='py-2 pt-5'>
@@ -48,6 +51,7 @@ class Vervolgschuinhellend extends Component {
                 <ul className='py-2 pb-5'>
                     <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/shop.html/schuindak-20-30-graden.html">Schuin dak sedummatten</a></li>
                 </ul>
+            </div>
             </div>
         );
     }

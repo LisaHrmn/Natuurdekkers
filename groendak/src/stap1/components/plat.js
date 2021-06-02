@@ -127,27 +127,19 @@ class Plat extends Component {
       return (
         <div className="w-full flex justify-center">
           <div className='w-full flex flex-col p-5 pt-1'>
+            {/* terug knop */}
+        <a class=" text-2xl text-left underline pl-2" href="/0">terug</a>
             <h2 className='pt-3 pb-2'>Gegevens plat dak:</h2>
             <form onSubmit={this.handleSubmit} className='m-auto mt-0 mb-0'>
               <div className="flex justify-around">
                 <div className="flex flex-col border p-3 m-2 w-1/3">
-                <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
-                <label htmlFor="gewicht" className='pt-5'>Draagkracht per m²</label>
-                <input id="gewicht" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
-
-                <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
-                <input id="oppervlak" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
-                </div>
-                <br/>
-                <div className="flex flex-col border p-3 m-2 w-1/3">
                   <h4 className='text-green-600'>Vul hier de gewenste specificaties in van het groene dak</h4>
-                  <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
-          <span class="tooltiptext">Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
-              <br></br><br></br>
-              biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
-          </span>
-        </div>
-                  <label htmlFor="water" className='pt-5'>Hoe hoog mag de waterbuffering zijn?</label>
+                  <label htmlFor="water" className='pt-5'>Hoe hoog mag de waterbuffering zijn?
+                  <div class="tooltip1"><img src={info} alt="placeholder" width="20" height="20"></img>
+                    <span class="tooltiptext1">
+                      Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
+                    </span>
+                  </div></label>
                   <select name="water" id="water" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required>
                     <option disabled selected value="">Kies...</option>
                     <option value="1">Laag</option>
@@ -155,10 +147,22 @@ class Plat extends Component {
                     <option value="3">Hoog</option>
                   </select>
 
-                  <label htmlFor="bio" className='pt-5'>Hoeveel biodiversiteit wil dat je het groene dak heeft op een schaal van 1 tot 5?</label>
+                  <label htmlFor="bio" className='pt-5'>Hoeveel biodiversiteit wil dat je het groene dak heeft op een schaal van 1 tot 5? 
+                  <div class="tooltip1"><img src={info} alt="placeholder" width="20" height="20"></img>
+                    <span class="tooltiptext1">
+                      biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
+                      <br/>
+                      1 is weinig en 5 is veel.
+                    </span>
+                  </div></label>
                   <input id="bio" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
 
-                  <label htmlFor="onderhoud" className='pt-5'>Hoe onderhoudsintensief mag het groene dak zijn op een schaal van 1 tot 5?</label>
+                  <label htmlFor="onderhoud" className='pt-5'>Hoe onderhoudsintensief mag het groene dak zijn op een schaal van 1 tot 5?
+                  <div class="tooltip2"><img src={info} alt="placeholder" width="20" height="20"></img>
+                    <span class="tooltiptext2">
+                      1 is weinig en 5 is veel.
+                    </span>
+                  </div></label>
                   <input id="onderhoud" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
 
                   <label htmlFor="kosten" className='pt-5'>Hoe hoog mogen de kosten zijn?</label>
@@ -174,6 +178,15 @@ class Plat extends Component {
                     <option value="ja">Ja</option>
                     <option value="nee">Nee</option>
                   </select>
+                </div>
+                <br></br>
+                <div className="flex flex-col border p-3 m-2 w-1/3">
+                <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
+                <label htmlFor="gewicht" className='pt-5'>Draagkracht per kg/m²</label>
+                <input id="gewicht" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
+
+                <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+                <input id="oppervlak" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
                 </div>
               </div>
               <div className="flex justify-center">
