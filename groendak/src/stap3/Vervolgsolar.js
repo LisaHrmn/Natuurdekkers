@@ -17,7 +17,11 @@ class Vervolgsolar extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
+                    
                 <h1>Solar groendak</h1>
                 <p>
                     Het solar groendak is de combinatie van zonnepanelen en groen op het dak. Voor het solar groendak moeten er
@@ -46,6 +50,7 @@ class Vervolgsolar extends Component {
                 <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groenedaken.net</a>
                 <br/>
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a>
+            </div>
             </div>
         );
     }
