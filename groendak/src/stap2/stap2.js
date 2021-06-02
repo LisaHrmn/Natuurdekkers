@@ -33,38 +33,47 @@ class Stap2 extends Component {
   render() {
     let image;
     let link;
+    let text;
     switch(this.props.location.state.recommendation) {
       case 'Economisch':
-        image= <img src={eco} className='m-auto sm:w-1/3 h-auto' alt='Eco groendak'/>
-        link=  <Link to={`/Vervolgeconomisch`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
+        image= <img src={eco} className='m-auto sm:w-1/3 h-auto' alt='Economisch groendak'/>
+        link=  <Link to={`/Vervolgeconomisch`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van de prijs heeft de AI gekozen dat een economisch groendak bet beste bij je past.</p>
       break
       case 'Natuur':
         image= <img src={natuur} className='m-auto sm:w-1/3 h-auto' alt='Natuur groendak'/>
-        link=  <Link to={`/Vervolgnatuur`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
+        link=  <Link to={`/Vervolgnatuur`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van het biodiversiteit heeft de AI gekozen dat een natuur groendak het beste bij je past.</p>
       break
       case 'Licht hellend':
-        image= <img src={licht} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
-        link=  <Link to={`/Vervolglichthellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
+        image= <img src={hellend} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
+        link=  <Link to={`/Vervolglichthellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van de opgegeven helling in graden heeft de AI gekozen dat een licht hellend groendak het beste bij je past.</p>
       break
       case 'Schuin Hellend':
-        image= <img src={licht} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
-        link=  <Link to={`/Vervolgschuinhellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
+        image= <img src={hellend} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
+        link=  <Link to={`/Vervolgschuinhellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van de opgegeven helling in graden heeft de AI gekozen dat een licht hellend groendak het beste bij je past.</p>
         break
       case 'Solar':
         image= <img src={solar} className='m-auto sm:w-1/3 h-auto' alt='Solar groendak'/>
-        link=  <Link to={`/Vervolgsolar`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Plat dak</Link>
-
+        link=  <Link to={`/Vervolgsolar`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van de draagkracht en de interesse in zonnepalenel heeft de AI gekozen dat een solar groendak het beste bij je past.</p>
         break
       default:
-        image= <img src={hellend} className='m-auto sm:w-1/3 h-auto' alt='Hellend groendak'/>
-        link=  <Link to={`/Vervolghellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Hellend dak</Link>
+        image= <img src={licht} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
+        link=  <Link to={`/Vervolglicht`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
+        text= <p>Op basis van de lichte draagkracht heeft de AI gekozen dat een lichtgewicht dak het beste bij je past.</p>
     }
     return (
       <div className='text-center'>
         <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
         {image}
-        <p>{this.props.location.state.waarom}</p>
+        {text}
+        <br/>
         {link}
+        <br/>
+        <br/>
       </div>
     );
   }
