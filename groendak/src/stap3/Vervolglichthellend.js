@@ -17,7 +17,11 @@ class Vervolglichthellend extends Component {
 
     render() {
         return (
+            <div>
+                {/* terug knop */}
+                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
             <div className='p-2 max-w-prose m-auto pb-5'>
+                
                 <h1>Licht hellend groendak</h1>
                 <p>
                     Het licht hellend groendak is geschikt voor daken met een helling tussen de 5° en 15°.
@@ -45,6 +49,7 @@ class Vervolglichthellend extends Component {
                 <a className="text-lg text-blue-800" href="https://www.groenedaken.net/">groeedaken.net</a>
                 <br/>
                 <a className="text-base text-blue-800" href="https://www.groenedaken.net/a-38054978/groendak-webshop/licht-hellend-pakket-prijs-v-a/#description">Schuin dak sedummatten</a>
+            </div>
             </div>
         );
     }

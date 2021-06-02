@@ -27,23 +27,23 @@ function Details1() {
         <div class="row">
 
           <div class="column1">
-            <a href="/Solar"><img src= {subplaceholder3} alt="Mountains" width="50" height="100"></img></a>
+          <a href="/Solar"><div class="tooltip" ><img src= {subplaceholder3} alt="Solar" width="50" height="100"></img><span class="tooltiptext2">Solar groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Hellend"><img src={subplaceholder3}  alt="Forest" width="40" height="80"></img></a>
+          <a href="/Hellend"><div class="tooltip" ><img src= {subplaceholder3} alt="Hellend" width="40" height="80"></img><span class="tooltiptext2">Hellend groendak</span></div></a>
+          </div>
+          
+          <div class="column2">
+          <a href="/Natuur"><div class="tooltip" ><img src= {subplaceholder3} alt="Natuur" width="40" height="80"></img><span class="tooltiptext2">Natuur groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Natuur"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+          <a href="/Lichtgewicht"><div class="tooltip" ><img src= {subplaceholder3} alt="Lichtgewicht" width="40" height="80"></img><span class="tooltiptext2">Lichtgewicht groendak</span></div></a>
           </div>
 
           <div class="column2">
-            <a href="/Lichtgewicht"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
-          </div>
-
-          <div class="column2">
-            <a href="/Economisch"><img src= {subplaceholder3} alt="Mountains" width="40" height="80"></img></a>
+          <a href="/Economisch"><div class="tooltip" ><img src= {subplaceholder3} alt="Economisch" width="40" height="80"></img><span class="tooltiptext2">Economisch groendak</span></div></a>
           </div>
 
         </div>

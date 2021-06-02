@@ -31,6 +31,7 @@ function Details1() {
             <a href="/Solar"><img src= {subplaceholder3} alt="Solar" width="40" height="80"></img></a>
           </div>
           
+          
           <div class="column2">
             <a href="/Hellend"><img src={subplaceholder3}  alt="Hellend" width="40" height="80"></img></a>
           </div>
@@ -50,7 +51,7 @@ function Details1() {
         </div>
 
         {/* descriptie */}
-        <h1 class=" text-left pl-9">Economish groen dak</h1>
+        <h1 class=" text-left pl-9">Economisch groen dak</h1>
 
         <div class="break-words w-1/2 bg-gray-200 ml-auto rounded-l-lg inset-y-0 right-0 float-right">
           <h2 class="text-center">descriptie</h2>
