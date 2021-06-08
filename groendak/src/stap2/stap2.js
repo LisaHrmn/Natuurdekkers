@@ -72,11 +72,12 @@ class Stap2 extends Component {
       <div className='text-center'>
         <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
         {image}
-        {text}
-        <br/>
-        {link}
-        <br/>
-        <br/>
+        <div className='m-4'>
+          {text}
+        </div>
+        <div className='m-4'>
+          {link}
+        </div>
       </div>
       </div>
     );

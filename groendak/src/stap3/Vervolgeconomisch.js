@@ -42,20 +42,20 @@ class Vervolgeconomisch extends Component {
                     </p>
 
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Groendakwebshop.nl</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Sedumstek Pakket</a></li>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Sedumplant Pakket</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Sedumstek pakket</a></li>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Sedumplant pakket</a></li>
                     </ul>
 
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/">Groendaktotaal.nl</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/shop.html/plat-dak.html">Sedummatten</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://groendaktotaal.nl/shop.html/plat-dak.html">Sedummatten</a></li>
                     </ul>
 
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/">Groenedaken.net</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a></li>
-                        <li><a className='text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a></li>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897327-4641247/groendak-webshop/sedumtapijt-pakket-prijs-v-a/#description">Sedumtapijt pakket</a></li>
                     </ul>
                 </div>
             </div>
