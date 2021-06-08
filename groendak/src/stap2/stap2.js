@@ -66,6 +66,9 @@ class Stap2 extends Component {
         text= <p>Op basis van de lichte draagkracht heeft de AI gekozen dat een lichtgewicht dak het beste bij je past.</p>
     }
     return (
+      <div>
+        {/* terug knop */}
+        <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
       <div className='text-center'>
         <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
         {image}
@@ -74,6 +77,7 @@ class Stap2 extends Component {
         {link}
         <br/>
         <br/>
+      </div>
       </div>
     );
   }
