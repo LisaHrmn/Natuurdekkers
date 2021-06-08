@@ -64,21 +64,26 @@ class Helling extends Component {
       return (
         <div>
           {/* terug knop */}
-          <a class=" text-2xl text-left underline pl-6" href="/0">terug</a>
-        <div className='text-center'>
-          <h2 className='pt-3'>Gegevens Hellend dak:</h2>
-          <div className="flex flex-col border p-3 m-2 w-1/3">
-          <h4 className='pt-3'>Vul hier de gegevens in voor uw hellend dak</h4>
-          <form onSubmit={this.handleSubmit} className='flex flex-col'>
-            <label htmlFor="graden" className='pt-5'>Dak helling in graden°:</label>
-            <input id="graden" type="number" min="1" max="35" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
-            <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
-            <input id="oppervlak" type="number" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md ' required/>
-            
-            <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
-          </form>
+          <a class=" text-2xl text-left underline pl-2" href="/0">terug</a>
+          <div className="w-full flex justify-center">
+            <div className='w-full flex flex-col p-5 pt-1'>
+              <h2 className='pt-3 pb-2 m-auto'>Gegevens Hellend dak:</h2>
+              <form onSubmit={this.handleSubmit} className='mt-0 mb-0'>
+                <div className="flex justify-around">
+                  <div className="flex flex-col border p-3 m-2 sm:w-1/3 w-2/3">
+                  <h4 className='text-green-600'>Vul hier de gegevens in voor uw hellend dak</h4>
+                  <label htmlFor="graden" className='pt-5'>Dak helling in graden°:</label>
+                  <input id="graden" type="number" min="1" max="35" className='form-input p-1 mt-1 ml-0 w-1/3 sm:w-1/4 h-auto rounded-md' required/>
+
+                  <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+                  <input id="oppervlak" type="number" className='form-input p-1 mt-1 ml-0 w-1/3 sm:w-1/4 h-auto rounded-md' required/>
+                  
+                  <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
         </div>
       );
     }
