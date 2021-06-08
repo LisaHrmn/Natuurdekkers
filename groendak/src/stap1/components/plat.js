@@ -190,14 +190,6 @@ class Plat extends Component {
                   </select>
                 </div>
                 <br></br>
-                <div className="flex flex-col border p-3 m-2 w-1/3">
-                <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
-                <label htmlFor="gewicht" className='pt-5'>Draagkracht per kg/m²</label>
-                <input id="gewicht" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
-
-                <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
-                <input id="oppervlak" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
-                </div>
               </div>
               <div className="flex justify-center">
                 <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
