@@ -64,7 +64,7 @@ class Helling extends Component {
       return (
         <div>
           {/* terug knop */}
-          <a class=" text-2xl text-left underline pl-2" href="/0">terug</a>
+          <a class=" text-2xl text-left underline pl-6" href="/0">terug</a>
         <div className='text-center'>
           <h2 className='pt-3'>Gegevens Hellend dak:</h2>
           <div className="flex flex-col border p-3 m-2 w-1/3">
@@ -73,8 +73,8 @@ class Helling extends Component {
             <label htmlFor="graden" className='pt-5'>Dak helling in graden°:</label>
             <input id="graden" type="number" min="1" max="35" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
             <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
-            <input id="oppervlak" type="number" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md' required/>
-            <br/>
+            <input id="oppervlak" type="number" className='form-input p-1 m-auto sm:w-1/4 h-auto rounded-md ' required/>
+            
             <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
           </form>
           </div>
