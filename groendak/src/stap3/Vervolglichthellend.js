@@ -19,7 +19,7 @@ class Vervolglichthellend extends Component {
         return (
             <div>
                 {/* terug knop */}
-                <a class=" text-2xl text-left underline pl-2" href="/0">opnieuw invullen</a>
+                <a class=" text-xl text-left underline pl-6" href="/0">opnieuw invullen</a>
                 <div className='p-2 max-w-prose m-auto pb-5'>
                     <h1 className='pt-3 text-green-600 font-semibold'>Licht hellend groendak</h1>
                     <p className='py-2 pt-5'>
