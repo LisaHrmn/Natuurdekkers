@@ -133,13 +133,23 @@ class Plat extends Component {
             <form onSubmit={this.handleSubmit} className='m-auto mt-0 mb-0'>
               <div className="flex justify-around">
                 <div className="flex flex-col border p-3 m-2 w-1/3">
+                <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
+                <label htmlFor="gewicht" className='pt-5'>Draagkracht in kilo per m²</label>
+                <input id="gewicht" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
+
+                <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
+                <input id="oppervlak" type='number' className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
+                </div>
+                <br/>
+                <div className="flex flex-col border p-3 m-2 w-1/3">
                   <h4 className='text-green-600'>Vul hier de gewenste specificaties in van het groene dak</h4>
-                  <label htmlFor="water" className='pt-5'>Hoe hoog mag de waterbuffering zijn?
-                  <div class="tooltip1"><img src={info} alt="placeholder" width="20" height="20"></img>
-                    <span class="tooltiptext1">
-                      Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
+                  <div class="tooltip" ><img src={info} alt="placeholder" width="30" height="30"></img>
+                    <span class="tooltiptext">Waterbuffer: Dit is de hoeveelheid water in liter per vierkante meter het dak kan opslaan. Een goede waterbuffer voorkomt wateroverlast en overbelasting van het riool.
+                      <br/><br/><br/><br/>
+                      biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
                     </span>
-                  </div></label>
+                  </div>
+                  <label htmlFor="water" className='pt-5'>Hoe hoog mag de waterbuffering zijn?</label>
                   <select name="water" id="water" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required>
                     <option disabled selected value="">Kies...</option>
                     <option value="1">Laag</option>
