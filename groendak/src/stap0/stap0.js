@@ -8,7 +8,7 @@ function Stap0() {
   return (
     <div>
       {/* terug knop */}
-      <a class=" text-2xl text-left underline pl-2" href="/">terug</a>
+      <a class=" text-2xl text-left underline pl-6" href="/">terug</a>
     <div className='text-center'>      
       <h1 className='pt-3'>Voordat we beginnen...</h1>
       <h4 className='py-3'>Heeft u een plat dak, of een hellend dak?</h4>
@@ -19,12 +19,12 @@ function Stap0() {
         </div>
           <div className="py-3 flex justify-around">
             <Link to={`/1/vlak`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>
-              Plat dak <br/>
-              (0 tot 5 graden)
+              <p>Plat dak </p>
+              <p>(0 tot 5 graden)</p>
             </Link>
             <Link to={`/1/helling`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>
-              Hellend dak <br/>
-              (5 tot 35 graden)
+              <p>Hellend dak</p>
+             <p>(5 tot 35 graden)</p> 
             </Link>
           </div>
       </div>
