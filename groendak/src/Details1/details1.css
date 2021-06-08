@@ -91,13 +91,13 @@
 
   .column1 {
     float: right;
-    width: 50px;
+    width: 100px;
     padding: 0px;
     margin: 0px 10px 0px 0px}
 
     .column2 {
       float: right;
-      width: 30px;
+      width: 50px;
       padding: 0px;
       margin: 20px 20px 0px 0px}
       .column3 {
