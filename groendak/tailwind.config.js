@@ -17,6 +17,13 @@ module.exports = {
         '4/7': '57.1428571%',
         '5/7': '71.4285714%',
         '6/7': '85.7142857%',
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        '2/5': '40%',
+        '1/3': '33.33%',
       }
     },
     colors: {
@@ -39,7 +46,8 @@ module.exports = {
         'h1': { fontSize: theme('fontSize.3xl') },
         'h2': { fontSize: theme('fontSize.2xl') },
         'h3': { fontSize: theme('fontSize.xl') },
-        'h4': { fontSize: theme('fontSize.lg') }
+        'h4': { fontSize: theme('fontSize.lg') },
+        'h5': { fontSize: theme('fontSize.base') },
       })
     }),
     require('@tailwindcss/typography'),
