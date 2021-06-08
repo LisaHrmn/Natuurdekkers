@@ -30,7 +30,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className='min-h-screen'>
+      <div className='relative min-h-screen pb-40 overflow-x-hidden'>
         <title>Natuurdekkers</title>
         < Header />
 
