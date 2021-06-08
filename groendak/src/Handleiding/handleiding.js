@@ -1,14 +1,17 @@
 function Handleiding() {
-    return(<div >
+    return(<div class="background">
+        <div class="safespot">
+        <div class="barrier"></div>
+            
         <h1>Handleiding</h1><br></br>
         <h2>Stap 1 beoordeel of uw dak geschikt is</h2>
-        <p>De verschillende groendaken hebben een verschillend gewicht, het is belangrijk dat u weet of uw dak het gewicht aankan. Bij elk groendak wordt het gewicht aangegeven.
+        <p classname = " text-left pl-8">De verschillende groendaken hebben een verschillend gewicht, het is belangrijk dat u weet of uw dak het gewicht aankan. Bij elk groendak wordt het gewicht aangegeven.
 Ook moet u rekening houden met de dakhelling, als het dak schuin is kunnen hier maatregelen moeten worden genomen om een groendak mogelijk te maken. 
 Een groendak is mogelijk als uw dak een vlakke stabiele ondergrond biedt, zoals van beton of bitumen. Een dak van dakpannen is niet geschikt, u kunt de dakpannen wel vervangen door een andere dakbedekking en op die nieuwe ondergrond vervolgens een groendak aanleggen.
 Als u al andere bevestigingen op het dak heeft zoals zonnepanelen, ventilatie, ramen, opslag of een boom dan is een groendak in de meeste gevallen zeker nog mogelijk. Denk hierbij er wel aan dat dit extra onderhoud eventueel nodig kan zijn. 
 </p><br></br>
 <h2>Stap 2 kies een groendak dat bij u past </h2>
-<p>Middels het <a className='text-blue-500' href='/stap0'>stappenplan</a> op deze website kunt u gemakkelijk door middel van een AI uitvinden welk dak het beste bij u situatie en wensen past. Wij slaan u data niet op, wat u invult op het formulier is alleen zichtbaar en beschikbaar voor uzelf. 
+<p>Middels het <a className='text-green-500 underline' href='/stap0'>stappenplan</a> op deze website kunt u gemakkelijk door middel van een AI uitvinden welk dak het beste bij u situatie en wensen past. Wij slaan u data niet op, wat u invult op het formulier is alleen zichtbaar en beschikbaar voor uzelf. 
 </p><br></br>
 
 <h2>Stap 3 schaf de nodige materialen aan</h2>
@@ -95,6 +98,7 @@ Verwijderen van ongewenste onkruiden en zaailingen van bomen uit de vegetatie (2
 </li><br></br>
 <p>Voor sommige groendaken als het natuur groendak is meer onderhoud nodig, deze heeft wat vaker water nodig en verwijdering van onkruid.</p>
 
+</div>
     </div>);
 }
 

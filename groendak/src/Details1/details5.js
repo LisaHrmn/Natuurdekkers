@@ -9,7 +9,11 @@ import dak1 from "./images/zon/dak1.png";
 import dak2 from "./images/zon/dak2.png";
 import dak3 from "./images/zon/dak3.png";
 import dak4 from "./images/zon/dak4.png";
-
+import ecorow from "./images/ecorow2.png";
+import hellendrow from "./images/hellendrow2.png";
+import lichtrow from "./images/lichtrow2.png";
+import natuurrow from "./images/natuurrow2.png";
+import solarrow from "./images/solarrow2.png";
 
 function Details1() {
   return (
@@ -26,27 +30,32 @@ function Details1() {
         {/* navigation row */}
         <div class="row">
 
-          <div class="column1">
-          <a href="/Solar"><div class="tooltip" ><img src= {subplaceholder3} alt="Solar" width="50" height="100"></img><span class="tooltiptext2">Solar groendak</span></div></a>
-          </div>
+<div class="column1">
+<a href="/Solar"><div class="tooltip" ><img src= {solarrow} alt="Solar" width="120" height="180"></img><span class="tooltiptext2">Solar groendak</span></div></a>
+</div>
 
-          <div class="column2">
-          <a href="/Hellend"><div class="tooltip" ><img src= {subplaceholder3} alt="Hellend" width="40" height="80"></img><span class="tooltiptext2">Hellend groendak</span></div></a>
-          </div>
-          
-          <div class="column2">
-          <a href="/Natuur"><div class="tooltip" ><img src= {subplaceholder3} alt="Natuur" width="40" height="80"></img><span class="tooltiptext2">Natuur groendak</span></div></a>
-          </div>
 
-          <div class="column2">
-          <a href="/Lichtgewicht"><div class="tooltip" ><img src= {subplaceholder3} alt="Lichtgewicht" width="40" height="80"></img><span class="tooltiptext2">Lichtgewicht groendak</span></div></a>
-          </div>
+<div class="column2">
+  <a href="/Hellend"><div class="tooltip" ><img src= {hellendrow} alt="Hellend" width="80" height="120"></img><span class="tooltiptext2">Hellend groendak</span></div></a>
 
-          <div class="column2">
-          <a href="/Economisch"><div class="tooltip" ><img src= {subplaceholder3} alt="Economisch" width="40" height="80"></img><span class="tooltiptext2">Economisch groendak</span></div></a>
-          </div>
+</div>
 
-        </div>
+<div class="column2">
+  <a href="/Natuur"><div class="tooltip" ><img src= {natuurrow} alt="Natuur" width="80" height="120"></img><span class="tooltiptext2">Natuur groendak</span></div></a>
+
+</div>
+
+<div class="column2">
+  <a href="/Lichtgewicht"><div class="tooltip" ><img src= {lichtrow} alt="Lichtgewicht" width="80" height="120"></img><span class="tooltiptext2">Lichtgewicht groendak</span></div></a>
+
+</div>
+
+<div class="column2">
+  <a href="/Economisch"><div class="tooltip" ><img src= {ecorow} alt="Economisch" width="80" height="120"></img><span class="tooltiptext2">Economish groendak</span></div></a>
+
+</div>
+
+</div>
 
         {/* descriptie */}
         <h1 class=" text-left pl-9">Solar groen dak</h1>
