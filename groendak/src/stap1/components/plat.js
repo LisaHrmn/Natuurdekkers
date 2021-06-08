@@ -130,7 +130,7 @@ class Plat extends Component {
           <a class=" text-2xl text-left underline pl-2" href="/0">terug</a>
           <div className="w-full flex justify-center">
             <div className='w-full flex flex-col p-5 pt-1'>
-              <h2 className='pt-3 pb-2'>Gegevens plat dak:</h2>
+              <h2 className='pt-3 pb-2 m-auto'>Gegevens plat dak:</h2>
               <form onSubmit={this.handleSubmit} className='m-auto mt-0 mb-0'>
                 <div className="flex justify-around">
                   <div className="flex flex-col border p-3 m-2 w-1/3">
