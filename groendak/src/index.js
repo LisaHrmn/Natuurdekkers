@@ -18,11 +18,11 @@ import Vervolglichthellend from './stap3/Vervolglichthellend';
 import Vervolgschuinhellend from './stap3/Vervolgschuinhellend';
 import Vervolglicht from'./stap3/Vervolglicht';
 import Vervolgnatuur from'./stap3/Vervolgnatuur';
-import Details1 from'./details1/details1';
-import Details2 from'./details1/details2';
-import Details3 from'./details1/details3';
-import Details4 from'./details1/details4';
-import Details5 from'./details1/details5';
+import Details1 from'./Details1/details1';
+import Details2 from'./Details1/details2';
+import Details3 from'./Details1/details3';
+import Details4 from'./Details1/details4';
+import Details5 from'./Details1/details5';
 import Handleiding from './Handleiding/handleiding';
 
 import reportWebVitals from './reportWebVitals';
