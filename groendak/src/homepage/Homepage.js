@@ -22,7 +22,7 @@ function Homepage() {
           Daarnaast draagt u bij aan een gezondere leefomgeving, beter milieu en meer biodiversiteit.
         </p>
         <p className='p-2 max-w-prose m-auto'>
-          Mogelijk kunt u subsidie krijgen voor het aanleggen van een groendak. <a target='_blank' className='text-green-600 hover:text-green-700 font-semibold' href="https://groenesubsidiewijzer.verbeterjehuis.nl/groenesubsidiewijzer/">Bekijk hier</a> de mogelijkheden bij uw gemeente.
+          Mogelijk kunt u subsidie krijgen voor het aanleggen van een groendak. <a target='_blank' rel="noreferrer" className='text-green-600 hover:text-green-700 font-semibold' href="https://groenesubsidiewijzer.verbeterjehuis.nl/groenesubsidiewijzer/">Bekijk hier</a> de mogelijkheden bij uw gemeente.
         </p>
         <p className='p-2 max-w-prose m-auto pb-5'>
           Afhankelijk van de specificaties, spreken we over verschillende groene daken. Wij willen u helpen met het uitvinden welk groendak het beste bij uw wensen en situatie past. 
