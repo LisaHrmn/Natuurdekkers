@@ -150,7 +150,7 @@ class Plat extends Component {
                     <span class="tooltiptext1">
                       biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
                       <br/>
-                       is weinig en 5 is veel.
+                       1 is weinig en 5 is veel.
                     </span>
                   </div></label>
                   <input id="bio" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
