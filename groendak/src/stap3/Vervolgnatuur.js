@@ -37,15 +37,15 @@ class Vervolgnatuur extends Component {
                 </p>
 
                 <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/">Groendakwebshop.nl</a>
-                <ul className='py-2 pb-5'>
-                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/Natuurdak-zaai-pakket.html">Zaaipakket en Sedumstekken</a></li>
-                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/kruidenpakket-plat-dak.html">Sedum kruiden matten</a></li>
-                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/Turfdak-pakket.html">Turfstekken</a></li>
+                <ul className='list-disc py-2 pb-5'>
+                    <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/Natuurdak-zaai-pakket.html">Zaaipakket en sedumstekken</a></li>
+                    <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/kruidenpakket-plat-dak.html">Sedum kruiden matten</a></li>
+                    <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groendakwebshop.nl/Kant-en-klaar-pakketten/Turfdak-pakket.html">Turfstekken</a></li>
                 </ul>
 
                 <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/">Groenedaken.net</a>
-                <ul className='py-2 pb-5'>
-                    <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-29015141-4641247/groendak-webshop/wildflower-pakket-prijs-v-a/#description">Grassen-Kruiden matten</a></li>
+                <ul className='list-disc py-2 pb-5'>
+                    <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-29015141-4641247/groendak-webshop/wildflower-pakket-prijs-v-a/#description">Grassen-kruiden matten</a></li>
                 </ul>
             </div>
             </div>

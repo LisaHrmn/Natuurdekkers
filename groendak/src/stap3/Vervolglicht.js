@@ -42,20 +42,20 @@ class Vervolglicht extends Component {
                     </p>
 
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://webwinkel.groendakcoach.nl/">Groendakcoach.nl</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://webwinkel.groendakcoach.nl/product/lichtgewicht-sedumpakket/">Lichtgewicht sedummatten</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://webwinkel.groendakcoach.nl/product/lichtgewicht-sedumpakket/">Lichtgewicht sedummatten</a></li>
                     </ul>
                     
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groenbedekking.net/">Groenbedekking.net</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenbedekking.net/product/totaalsysteem-lichtgewicht-groendak/">Lichtgewicht Sedummatten</a></li>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenbedekking.net/product/sedumtrays-lichtgewicht-sedumcassettes-per-m2/">Lichtgewicht Sedumcassettes</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenbedekking.net/product/totaalsysteem-lichtgewicht-groendak/">Lichtgewicht sedummatten</a></li>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenbedekking.net/product/sedumtrays-lichtgewicht-sedumcassettes-per-m2/">Lichtgewicht sedumcassettes</a></li>
                     </ul>
                     
                     <a className='text-lg text-green-600 hover:text-green-700 font-semibold underline' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/">Groenedaken.net</a>
-                    <ul className='py-2 pb-5'>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a></li>
-                        <li><a className='text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-59800863/groendak-home/sedumtapijt-light-pakket-prijs-v-a/#description">Lichtgewicht Sedumtapijt</a></li>
+                    <ul className='list-disc py-2 pb-5'>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-28897289-4641247/groendak-webshop/sedumstek-pakket-prijs-v-a/#description">Sedumstek pakket</a></li>
+                        <li><a className='ml-4 text-base text-green-600 hover:text-green-700 hover:underline font-semibold' target='_blank' rel="noreferrer" href="https://www.groenedaken.net/a-59800863/groendak-home/sedumtapijt-light-pakket-prijs-v-a/#description">Lichtgewicht sedumtapijt</a></li>
                     </ul>
                 </div>
             </div>

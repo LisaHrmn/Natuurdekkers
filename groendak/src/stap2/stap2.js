@@ -39,17 +39,17 @@ class Stap2 extends Component {
         image= <img src={eco} className='m-auto sm:w-1/3 h-auto' alt='Economisch groendak'/>
         link=  <Link to={`/Vervolgeconomisch`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
         text= <p>Op basis van de prijs heeft de AI gekozen dat een economisch groendak bet beste bij je past.</p>
-      break
+        break
       case 'Natuur':
         image= <img src={natuur} className='m-auto sm:w-1/3 h-auto' alt='Natuur groendak'/>
         link=  <Link to={`/Vervolgnatuur`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
         text= <p>Op basis van het biodiversiteit heeft de AI gekozen dat een natuur groendak het beste bij je past.</p>
-      break
+        break
       case 'Licht hellend':
         image= <img src={hellend} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
         link=  <Link to={`/Vervolglichthellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
         text= <p>Op basis van de opgegeven helling in graden heeft de AI gekozen dat een licht hellend groendak het beste bij je past.</p>
-      break
+        break
       case 'Schuin Hellend':
         image= <img src={hellend} className='m-auto sm:w-1/3 h-auto' alt='Lichtgewicht groendak'/>
         link=  <Link to={`/Vervolgschuinhellend`} className='py-2 px-4 text-green-600 border border-green-600 rounded-md hover:text-gray-200 hover:bg-green-600'>Meer info</Link>
@@ -66,19 +66,19 @@ class Stap2 extends Component {
         text= <p >Op basis van de lichte draagkracht heeft de AI gekozen dat een lichtgewicht dak het beste bij je past.</p>
     }
     return (
-      <div>
-        {/* terug knop */}
-        <a class=" text-xl text-left underline pl-6" href="/0">opnieuw invullen</a>
-      <div className='text-center'>
-        <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
-        {image}
-        {text}
-        <div className='pt-8 pb-4'>{link}</div>
-        
-        
-    
-      </div>
-      </div>
+        <div>
+          {/* terug knop */}
+          <a class=" text-xl text-left underline pl-6" href="/0">opnieuw invullen</a>
+          <div className='text-center'>
+            <h2 className='py-3'>Aanbeveling: {this.props.location.state.recommendation} dak</h2>
+            {image}
+            {text}
+            <div className='pt-8 pb-4'>{link}</div>
+
+
+
+          </div>
+        </div>
     );
   }
 }

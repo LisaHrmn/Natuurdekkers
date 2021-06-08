@@ -91,13 +91,13 @@
 
   .column1 {
     float: right;
-    width: 120px;
+    width: 50px;
     padding: 0px;
     margin: 0px 10px 0px 0px}
 
     .column2 {
       float: right;
-      width: 80px;
+      width: 30px;
       padding: 0px;
       margin: 20px 20px 0px 0px}
       .column3 {
@@ -230,9 +230,4 @@ border-color: black;    }
 
 .tooltip:hover .tooltiptext2 {
   visibility: visible;
-}
-
-.height
-{
-  height: 400px;
 }
