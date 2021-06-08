@@ -151,9 +151,9 @@ class Plat extends Component {
                     <label htmlFor="bio" className='pt-5'>Hoeveel biodiversiteit wil dat je het groene dak heeft op een schaal van 1 tot 5? 
                     <div class="tooltip1"><img src={info} alt="placeholder" width="20" height="20"></img>
                       <span class="tooltiptext1">
-                        biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak
-                        <br/>
-                          1 is weinig en 5 is veel.
+                        <p>biodiversiteit: Dit is de graad aan verschilende levensvormen op het dak</p>
+                        
+                          <p>1 is weinig en 5 is veel.</p>
                       </span>
                     </div></label>
                     <input id="bio" type='number' min="1" max="5" className='form-input p-1 mt-1 ml-0 w-1/4 h-auto rounded-md' required/>
@@ -180,7 +180,7 @@ class Plat extends Component {
                       <option value="nee">Nee</option>
                     </select>
                   </div>
-                  <br></br>
+                 
                   <div className="flex flex-col border p-3 m-2 w-1/3">
                   <h4 className='text-green-600'>Vul hier de gegevens in van uw platte dak</h4>
                   <label htmlFor="gewicht" className='pt-5'>Draagkracht per kg/m²</label>

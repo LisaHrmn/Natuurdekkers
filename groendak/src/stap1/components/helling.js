@@ -77,7 +77,7 @@ class Helling extends Component {
 
                   <label htmlFor="oppervlak" className='pt-5'>Oppervlakte dak in m²</label>
                   <input id="oppervlak" type="number" className='form-input p-1 mt-1 ml-0 w-1/3 sm:w-1/4 h-auto rounded-md' required/>
-                  <br/>
+                  
                   <button id="submit" className='py-2 px-5 mx-auto my-5 text-green-600 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-600'>Submit</button>
                   </div>
                 </div>
