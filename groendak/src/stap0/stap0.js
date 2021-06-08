@@ -6,7 +6,10 @@ import hellend from '../img/hellend2.jpg'
 
 function Stap0() {
   return (
-    <div className='text-center'>
+    <div>
+      {/* terug knop */}
+      <a class=" text-2xl text-left underline pl-2" href="/">terug</a>
+    <div className='text-center'>      
       <h1 className='pt-3'>Voordat we beginnen...</h1>
       <h4 className='py-3'>Heeft u een plat dak, of een hellend dak?</h4>
       <div className='py-2 bg-gray-100'>
@@ -25,6 +28,7 @@ function Stap0() {
             </Link>
           </div>
       </div>
+    </div>
     </div>
   );
 }

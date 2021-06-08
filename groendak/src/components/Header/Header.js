@@ -2,7 +2,7 @@ function Header() {
     return (
       <div className='pt-6 pb-7 bg-green-800 text-center'>
           <header className='m-auto flex justify-between'>
-            <h1 className='pl-20 font-semibold text-gray-100'>Natuurdekkers</h1>
+            <a href="/"><h1 className='pl-20 font-semibold text-gray-100'>Natuurdekkers</h1></a>
             <ul className='mr-20 flex justify-evenly'>
               <li className='flex self-center hover:text-gray-100'>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
